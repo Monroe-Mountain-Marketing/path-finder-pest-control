@@ -1,38 +1,12 @@
-import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
-import { ArrowUpToLine } from "lucide-react";
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
-export const ScrollToTop = () => {
-  const [showTopBtn, setShowTopBtn] = useState(false);
+export default function ScrollToTop() {
+  const { pathname } = useLocation()
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        setShowTopBtn(true);
-      } else {
-        setShowTopBtn(false);
-      }
-    });
-  }, []);
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [pathname])
 
-  const goToTop = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-    });
-  };
-
-  return (
-    <>
-      {showTopBtn && (
-        <Button
-          onClick={goToTop}
-          className="fixed bottom-4 right-4 opacity-90 shadow-md"
-          size="icon"
-        >
-          <ArrowUpToLine className="h-4 w-4" />
-        </Button>
-      )}
-    </>
-  );
-};
+  return null
+}

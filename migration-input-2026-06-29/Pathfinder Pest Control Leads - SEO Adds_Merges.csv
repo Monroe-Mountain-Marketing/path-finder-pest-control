@@ -1,0 +1,91 @@
+Old URL,Action,Target URL,Reason,Priority
+https://pathfinderpestcontrol.com/,Keep,https://pathfinderpestcontrol.com/,Primary homepage,P1
+https://pathfinderpestcontrol.com/,Keep (dedupe sitemap),https://pathfinderpestcontrol.com/,Duplicate URL entry in sitemap,P1
+https://pathfinderpestcontrol.com/contact-us/,Keep,https://pathfinderpestcontrol.com/contact-us/,Core conversion page,P1
+https://pathfinderpestcontrol.com/new-articles/,Keep,https://pathfinderpestcontrol.com/new-articles/,Blog hub,P1
+https://pathfinderpestcontrol.com/moles-voles-removal/,Keep,https://pathfinderpestcontrol.com/moles-voles-removal/,Commercial service intent,P1
+https://pathfinderpestcontrol.com/gopher-removal/,Keep,https://pathfinderpestcontrol.com/gopher-removal/,Commercial service intent,P1
+https://pathfinderpestcontrol.com/service/flea-control/,Keep,https://pathfinderpestcontrol.com/service/flea-control/,Core service page,P1
+https://pathfinderpestcontrol.com/service/fumigation-services/,Keep,https://pathfinderpestcontrol.com/service/fumigation-services/,Core service page,P1
+https://pathfinderpestcontrol.com/service/home-pest-inspection/,Keep,https://pathfinderpestcontrol.com/service/home-pest-inspection/,Core service page,P1
+https://pathfinderpestcontrol.com/service/mosquito-control/,Keep,https://pathfinderpestcontrol.com/service/mosquito-control/,Core service page,P1
+https://pathfinderpestcontrol.com/service/spider-exterminator/,Keep,https://pathfinderpestcontrol.com/service/spider-exterminator/,Core service page,P1
+https://pathfinderpestcontrol.com/service/termite-treatment/,Keep,https://pathfinderpestcontrol.com/service/termite-treatment/,Core service page,P1
+https://pathfinderpestcontrol.com/service/wasp-hornet-elimination/,Keep,https://pathfinderpestcontrol.com/service/wasp-hornet-elimination/,Core service page,P1
+https://pathfinderpestcontrol.com/service/wildlife-removal/,Keep,https://pathfinderpestcontrol.com/service/wildlife-removal/,Core service page,P1
+https://pathfinderpestcontrol.com/service/rodent-control/,Keep,https://pathfinderpestcontrol.com/service/rodent-control/,Core service page,P1
+https://pathfinderpestcontrol.com/service/commercial-pest-control/,Keep,https://pathfinderpestcontrol.com/service/commercial-pest-control/,Core service page,P1
+https://pathfinderpestcontrol.com/service/cockroach-extermination/,Keep,https://pathfinderpestcontrol.com/service/cockroach-extermination/,Core service page,P1
+https://pathfinderpestcontrol.com/service/bed-bug-removal/,Keep,https://pathfinderpestcontrol.com/service/bed-bug-removal/,Core service page,P1
+https://pathfinderpestcontrol.com/bed-bug-inspection/,Merge,https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Duplicate intent with stronger long-form variant,P1
+https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Keep (canonical),https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Canonical for this intent,P1
+https://pathfinderpestcontrol.com/what-is-ipm-integrated-pest-management-explained/,Merge,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Overlapping IPM topic cluster,P1
+https://pathfinderpestcontrol.com/termite-treatment-cost/,Keep,https://pathfinderpestcontrol.com/termite-treatment-cost/,High commercial informational intent,P1
+https://pathfinderpestcontrol.com/sap/jenks/,Merge,https://pathfinderpestcontrol.com/jenks-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/sap/broken-arrow/,Merge,https://pathfinderpestcontrol.com/broken-arrow-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/sap/glenpool/,Merge,https://pathfinderpestcontrol.com/glenpool-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/sap/catoosa/,Merge,https://pathfinderpestcontrol.com/catoosa-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/sap/coweta/,Merge,https://pathfinderpestcontrol.com/coweta-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/sap/bixby/,Merge,https://pathfinderpestcontrol.com/bixby-pest-control/,Convert SAP utility into real location page,P1
+https://pathfinderpestcontrol.com/template/service/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template/footer/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template/sap-template/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template/header/,Delete (410),N/A,Template/development URL already seen 404,P1
+https://pathfinderpestcontrol.com/template/our-process-section/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template/services-section/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template/home-page-template/,Delete (410),N/A,Template/development URL,P1
+https://pathfinderpestcontrol.com/template_tag/trades/,Delete (410),N/A,Low-value template taxonomy,P1
+https://pathfinderpestcontrol.com/category/pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/new-articles/,Archive page likely low value,P1
+https://pathfinderpestcontrol.com/category/uncategorized/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/new-articles/,Thin/empty archive,P1
+https://pathfinderpestcontrol.com/tag/bed-bug-inspection/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/bed-bug-removal-tulsa/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/service/bed-bug-removal/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/bed-bug-signs/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/diy-ant-removal/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/diy-bed-bug-check/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/diy-bed-bug-treatment/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-bed-bugs-fast/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/diy-pest-inspection/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/service/home-pest-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/eco-friendly-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/home-inspection-preparation/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/home-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/service/home-pest-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/how-to-get-rid-of-ants-in-kitchen/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/how-to-get-rid-of-bed-bugs-fast/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-bed-bugs-fast/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/how-to-prepare-for-home-inspection/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/integrated-pest-management/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/integrated-pest-management-benefits/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/ipm-strategies/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/kitchen-ant-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/long-term-pest-solutions/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/pathfinder-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/,Brand tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/pest-control-cost/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/termite-treatment-cost/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/pest-control-tulsa/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/pest-inspection-tips/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/prevent-ant-infestations/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/professional-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/real-estate-inspection/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/safe-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/seller-inspection-checklist/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/signs-of-bed-bugs/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/bed-bug-inspection-2/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/sustainable-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/termite-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/service/termite-treatment/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/termite-inspection/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/service/termite-treatment/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/termite-treatment-cost/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/termite-treatment-cost/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/tag/tulsa-pest-control/,Noindex + remove from sitemap,https://pathfinderpestcontrol.com/,Tag archive bloat,P1
+https://pathfinderpestcontrol.com/privacy-policy/,Keep,https://pathfinderpestcontrol.com/privacy-policy/,Legal page,P2
+https://pathfinderpestcontrol.com/how-to-tell-the-difference-between-a-bed-bug-bite-and-a-flea-bite/,Keep,https://pathfinderpestcontrol.com/how-to-tell-the-difference-between-a-bed-bug-bite-and-a-flea-bite/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/using-cimexa-dust-for-bed-bugs-how-it-works-tips-and-best-practices/,Keep,https://pathfinderpestcontrol.com/using-cimexa-dust-for-bed-bugs-how-it-works-tips-and-best-practices/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/do-it-yourself-how-to-build-a-homemade-flea-trap/,Keep,https://pathfinderpestcontrol.com/do-it-yourself-how-to-build-a-homemade-flea-trap/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/do-essential-oils-work-in-pest-control/,Keep,https://pathfinderpestcontrol.com/do-essential-oils-work-in-pest-control/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/why-are-roaches-so-hard-to-get-rid-of/,Keep,https://pathfinderpestcontrol.com/why-are-roaches-so-hard-to-get-rid-of/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/mosquito-eaters-animals-and-insects-that-help-control-mosquito-populations-naturally/,Keep,https://pathfinderpestcontrol.com/mosquito-eaters-animals-and-insects-that-help-control-mosquito-populations-naturally/,Distinct informational intent,P2
+https://pathfinderpestcontrol.com/benefits-of-local-honey-natures-sweet-superfood/,Delete (410),N/A,Off-topic to core pest-control topical map,P2
+https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Keep,https://pathfinderpestcontrol.com/how-to-prepare-for-home-inspection/,Useful homeowner intent,P2
+https://pathfinderpestcontrol.com/eco-friendly-pest-control-solutions/,Merge,https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Overlap with IPM/safe pest strategy,P2
+https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Keep (canonical),https://pathfinderpestcontrol.com/integrated-pest-management-benefits/,Canonical IPM guide,P2
+https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Keep,https://pathfinderpestcontrol.com/how-to-get-rid-of-ants-in-kitchen/,Strong long-tail intent,P2
+https://pathfinderpestcontrol.com/how-to-get-rid-of-bed-bugs-fast/,Keep,https://pathfinderpestcontrol.com/how-to-get-rid-of-bed-bugs-fast/,Strong long-tail intent,P2
+https://pathfinderpestcontrol.com/bed-bug-preparation-instructions/,Keep,https://pathfinderpestcontrol.com/bed-bug-preparation-instructions/,Prep page tied to services,P2
+https://pathfinderpestcontrol.com/pathfinder-pest-control-now-offers-gopher-removal-as-a-stand-alone-or-yard-pest-control-service-in-oklahoma/,Merge,https://pathfinderpestcontrol.com/gopher-removal/,News post overlaps service intent,P2
+https://pathfinderpestcontrol.com/mole-removal-mole-control-in-tulsa-broken-arrow-ok/,Merge,https://pathfinderpestcontrol.com/moles-voles-removal/,Overlapping mole/gopher intent,P2
+https://pathfinderpestcontrol.com/flea-treatment-preparation-instructions/,Keep,https://pathfinderpestcontrol.com/flea-treatment-preparation-instructions/,Service prep page,P2
+https://pathfinderpestcontrol.com/german-roach-preparation-instructions/,Keep,https://pathfinderpestcontrol.com/german-roach-preparation-instructions/,Service prep page,P2
+https://pathfinderpestcontrol.com/professional-disinfectant-sanitization-services/,Keep,https://pathfinderpestcontrol.com/professional-disinfectant-sanitization-services/,Service-adjacent page,P3

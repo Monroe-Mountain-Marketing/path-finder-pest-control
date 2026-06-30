@@ -1,0 +1,10 @@
+# Created by Rank Math
+# Mon, 29 Jun 2026 21:29:35 -0500
+# Rank Math 1.0.272 - https://rankmath.com/
+
+<IfModule mod_rewrite.c>
+RewriteRule ^new\-articles//?$ https://pathfinderpestcontrol.com/category/blog/ [R=301,L]
+RewriteRule ^pest\-control\-in\-owasso\-ok\-pathfinder\-pest\-control//?$ https://pathfinderpestcontrol.com/pest-control-owasso-ok/ [R=301,L]
+</IfModule>
+
+# Rank Math Redirections END

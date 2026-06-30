@@ -1,0 +1,90 @@
+name: pathfinder-pest-control
+region: nyc
+services: []
+static_sites:
+  - name: web
+    environment_slug: node-js
+    github:
+      repo: Monroe-Mountain-Marketing/path-finder-pest-control
+      branch: dev
+      deploy_on_push: true
+    source_dir: /
+    build_command: npm run launch:check
+    output_dir: dist
+    catchall_document: index.html
+    routes:
+      - path: /
+ingress:
+  rules:
+    - match:
+        path:
+          prefix: /category/blog
+      redirect:
+        uri: /new-articles
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /bed-bug-inspection
+      redirect:
+        uri: /bed-bug-inspection-2
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /what-is-ipm-integrated-pest-management-explained
+      redirect:
+        uri: /integrated-pest-management-benefits
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /eco-friendly-pest-control-solutions
+      redirect:
+        uri: /integrated-pest-management-benefits
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /pathfinder-pest-control-now-offers-gopher-removal-as-a-stand-alone-or-yard-pest-control-service-in-oklahoma
+      redirect:
+        uri: /gopher-removal
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /mole-removal-mole-control-in-tulsa-broken-arrow-ok
+      redirect:
+        uri: /moles-voles-removal
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/jenks
+      redirect:
+        uri: /jenks-pest-control
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/broken-arrow
+      redirect:
+        uri: /broken-arrow-pest-control
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/glenpool
+      redirect:
+        uri: /glenpool-pest-control
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/catoosa
+      redirect:
+        uri: /catoosa-pest-control
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/coweta
+      redirect:
+        uri: /coweta-pest-control
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /sap/bixby
+      redirect:
+        uri: /bixby-pest-control
+        redirect_code: 301
