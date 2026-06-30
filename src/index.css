@@ -30,6 +30,47 @@ body {
   background-color: #ffffff;
 }
 
+/* Glossary term highlights — pure CSS tooltip (desktop), click drawer (mobile) */
+.g-term {
+  border-bottom: 1.5px dashed #568d22;
+  cursor: help;
+  position: relative;
+  display: inline;
+}
+
+/* Desktop CSS tooltip via ::after — no JS, no re-renders */
+@media (min-width: 1024px) {
+  .g-term::after {
+    content: attr(data-def);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    background: #112a44;
+    color: #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    white-space: normal;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 9999;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .g-term:hover {
+    background-color: rgba(86,141,34,0.1);
+    border-radius: 2px;
+  }
+
+  .g-term:hover::after {
+    opacity: 1;
+  }
+}
+
 /* WordPress blog content styles */
 .wp-content h1,
 .wp-content h2,

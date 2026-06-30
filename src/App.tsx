@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/HomePage'
@@ -7,10 +7,13 @@ import DirectServicePage from './pages/DirectServicePage'
 import SAPPage from './pages/SAPPage'
 import GopherRemovalPage from './pages/GopherRemovalPage'
 import MolesVolesPage from './pages/MolesVolesPage'
+import ResidentialPage from './pages/ResidentialPage'
+import CommercialPage from './pages/CommercialPage'
 import ContactPage from './pages/ContactPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import BlogListingPage from './pages/BlogListingPage'
 import BlogPostPage from './pages/BlogPostPage'
+import GlossaryPage from './pages/GlossaryPage'
 
 // 404 page
 function NotFoundPage() {
@@ -62,6 +65,8 @@ export default function App() {
           {/* Standalone service pages */}
           <Route path="/gopher-removal" element={<GopherRemovalPage />} />
           <Route path="/moles-voles-removal" element={<MolesVolesPage />} />
+          <Route path="/residential-pest-control" element={<ResidentialPage />} />
+          <Route path="/commercial-pest-control" element={<CommercialPage />} />
 
           {/* Core pages */}
           <Route path="/contact-us" element={<ContactPage />} />
@@ -74,6 +79,14 @@ export default function App() {
           <Route path="/category/pest-control" element={<BlogListingPage />} />
           <Route path="/category/blog" element={<BlogListingPage />} />
           <Route path="/category/uncategorized" element={<BlogListingPage />} />
+          <Route path="/glossary" element={<GlossaryPage />} />
+
+          {/* Tag pages — redirect to blog listing (preserves SEO inbound links) */}
+          <Route path="/tag/:tag" element={<BlogListingPage />} />
+
+          {/* WordPress template pages — redirect to home */}
+          <Route path="/template/*" element={<Navigate to="/" replace />} />
+          <Route path="/template_tag/*" element={<Navigate to="/" replace />} />
 
           {/* Dynamic catch-all for all blog post slugs — must be last before * */}
           <Route path="/:slug" element={<BlogPostPage />} />

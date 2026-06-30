@@ -36,7 +36,7 @@ export default function WhyUsSection() {
           {/* Right - image */}
           <div className="relative">
             <img
-              src="https://pathfinderpestcontrol.com/wp-content/uploads/2026/03/pexels-michelangelo-buonarroti-4176548.webp"
+              src="/images/path-finder-pest-control-tulsa-oklahoma.jpg"
               alt="Pest Control Tulsa OK"
               className="rounded-xl w-full h-auto object-cover shadow-lg"
             />

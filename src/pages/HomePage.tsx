@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import ProcessSection from '../components/ProcessSection'
 import WhyUsSection from '../components/WhyUsSection'
+import ReviewsSection from '../components/ReviewsSection'
 import AreasSection from '../components/AreasSection'
 import FAQSection from '../components/FAQSection'
 
@@ -206,6 +207,7 @@ export default function HomePage() {
       </section>
 
       <WhyUsSection />
+      <ReviewsSection />
       <ProcessSection />
       <AreasSection />
 

@@ -1,6 +1,9 @@
 import { useParams, Link, useLocation } from 'react-router-dom'
+import { useMemo } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { getBlogPostBySlug, blogPosts } from '../data/blogData'
+import GlossaryContent from '../components/GlossaryContent'
+import { injectGlossaryTerms } from '../utils/injectGlossaryTerms'
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -23,6 +26,7 @@ export default function BlogPostPage() {
   }
 
   const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 4)
+  const enrichedContent = useMemo(() => injectGlossaryTerms(post.content), [post.content])
 
   return (
     <>
@@ -50,11 +54,8 @@ export default function BlogPostPage() {
 
           {/* Main article */}
           <article className="lg:col-span-2">
-          {/* Render WordPress HTML */}
-            <div
-              className="wp-content"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+            {/* Glossary-enhanced WordPress HTML */}
+            <GlossaryContent html={enrichedContent} containerClassName="wp-content" />
 
             {/* Tags */}
             {post.tags.length > 0 && (

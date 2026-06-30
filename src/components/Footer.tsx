@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 
 const services = [
+  { label: 'Residential Pest Control', path: '/residential-pest-control' },
+  { label: 'Commercial Pest Control', path: '/commercial-pest-control' },
   { label: 'Bed Bug Removal', path: '/services/bed-bug-exterminator' },
   { label: 'Rodent Control', path: '/service/rodent-control' },
   { label: 'Gopher Removal', path: '/gopher-removal' },
   { label: 'Mosquito Control', path: '/service/mosquito-control' },
-  { label: 'Commercial Pest Control', path: '/service/commercial-pest-control' },
   { label: 'Flea Control', path: '/service/flea-control' },
 ]
 
@@ -14,6 +15,7 @@ const quickLinks = [
   { label: 'Contact Us', path: '/contact-us' },
   { label: 'Privacy Policy', path: '/privacy-policy' },
   { label: 'Blog', path: '/new-articles' },
+  { label: 'Pest Control Glossary', path: '/glossary' },
   { label: 'Request a Quote', path: '/request-a-qoute' },
 ]
 

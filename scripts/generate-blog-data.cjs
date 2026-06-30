@@ -9,6 +9,11 @@ function cleanContent(html) {
     .replace(/<!-- \/?wp:[^\n]*?-->/g, '')
     .replace(/\n{3,}/g, '\n\n')
     .replace(/&amp;/g, '&')
+    // Rewrite internal links to relative paths (with or without a path component)
+    .replace(/href="https?:\/\/pathfinderpestcontrol\.com(\/[^"]*)"/g, 'href="$1"')
+    .replace(/href="https?:\/\/pathfinderpestcontrol\.com"/g, 'href="/"')
+    // Remove trailing slashes from internal hrefs to match React Router paths
+    .replace(/href="(\/[^"]+)\/"/g, 'href="$1"')
     .trim()
 }
 
