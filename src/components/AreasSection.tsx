@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom'
+
 const areas = [
   { name: 'Broken Arrow', zip: '74112', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Building_in_Broken_Arrow_Oklahoma-768x511.jpg', path: '/sap/broken-arrow' },
-  { name: 'Sand Springs', zip: '74063', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-I-44_at_OK66_With_Bypassed_Turnpike_Section_-_Catoosa_50619249636-768x512.jpg', path: '/sap/catoosa' },
+  { name: 'Sand Springs', zip: '74063', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-I-44_at_OK66_With_Bypassed_Turnpike_Section_-_Catoosa_50619249636-768x512.jpg', path: '/sap/sand-springs' },
   { name: 'Bixby', zip: '74008', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Old_bridge_across_Arkansas_River.jpg', path: '/sap/bixby' },
-  { name: 'Tulsa', zip: '74105', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Glenpool_Conference_Center_pond_view-768x575.jpg', path: '/' },
-  { name: 'Owasso', zip: '74055', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Jenks_riverwalk.jpg', path: '/' },
-  { name: 'Sapulpa', zip: '74066', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Building_in_Broken_Arrow_Oklahoma-768x511.jpg', path: '/' },
+  { name: 'Tulsa', zip: '74105', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Glenpool_Conference_Center_pond_view-768x575.jpg', path: '/sap/tulsa' },
+  { name: 'Owasso', zip: '74055', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Jenks_riverwalk.jpg', path: '/sap/owasso' },
+  { name: 'Sapulpa', zip: '74066', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Building_in_Broken_Arrow_Oklahoma-768x511.jpg', path: '/sap/sapulpa' },
   { name: 'Jenks', zip: '74037', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-I-44_at_OK66_With_Bypassed_Turnpike_Section_-_Catoosa_50619249636-768x512.jpg', path: '/sap/jenks' },
   { name: 'Glenpool', zip: '74033', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Old_bridge_across_Arkansas_River.jpg', path: '/sap/glenpool' },
   { name: 'Coweta', zip: '74429', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/960px-Glenpool_Conference_Center_pond_view-768x575.jpg', path: '/sap/coweta' },
-  { name: 'Berryhill', zip: '74107', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Jenks_riverwalk.jpg', path: '/' },
+  { name: 'Berryhill', zip: '74107', img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/Jenks_riverwalk.jpg', path: '/sap/berryhill' },
 ]
 
 export default function AreasSection() {
@@ -21,7 +23,11 @@ export default function AreasSection() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {areas.map((area) => (
-            <div key={area.name} className="relative rounded-xl overflow-hidden group cursor-pointer shadow-md">
+            <Link
+              key={area.name}
+              to={area.path}
+              className="relative rounded-xl overflow-hidden group cursor-pointer shadow-md block"
+            >
               <img
                 src={area.img}
                 alt={area.name}
@@ -31,7 +37,7 @@ export default function AreasSection() {
                 <h3 className="font-bold text-base">{area.name}</h3>
                 <p className="text-sm text-gray-200">{area.zip}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
