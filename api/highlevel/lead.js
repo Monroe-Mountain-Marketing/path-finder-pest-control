@@ -30,56 +30,96 @@ export default async function handler(req, res) {
       : (req.body || {})
 
     const { name = '', email = '', phone = '', service = '', message = '' } = parsedBody
+    const normalizedName = String(name).trim()
+    const normalizedEmail = String(email).trim()
+    const normalizedPhone = String(phone).trim()
+    const normalizedService = String(service).trim()
+    const normalizedMessage = String(message).trim()
 
-    if (!name || !email || !phone) {
+    if (!normalizedName || !normalizedEmail || !normalizedPhone) {
       return res.status(400).json({
         error: 'Name, email, and phone are required.',
         details: {
-          hasName: Boolean(name),
-          hasEmail: Boolean(email),
-          hasPhone: Boolean(phone),
+          hasName: Boolean(normalizedName),
+          hasEmail: Boolean(normalizedEmail),
+          hasPhone: Boolean(normalizedPhone),
         },
       })
     }
 
-    const { firstName, lastName } = parseName(name)
+    const { firstName, lastName } = parseName(normalizedName)
 
-    const payload = {
+    const basePayload = {
       locationId,
       firstName,
       lastName,
-      email,
-      phone,
+      email: normalizedEmail,
+      phone: normalizedPhone,
       source: 'Website Contact Form',
       tags: ['Website Lead'],
+    }
+
+    const payloadWithCustomFields = {
+      ...basePayload,
       customFields: [
         {
           key: 'service_needed',
-          field_value: service || 'Not specified',
+          field_value: normalizedService || 'Not specified',
         },
         {
           key: 'lead_message',
-          field_value: message || 'No message provided',
+          field_value: normalizedMessage || 'No message provided',
         },
       ],
     }
 
-    const ghlResponse = await fetch(`${HIGHLEVEL_BASE_URL}/contacts/`, {
+    const requestHeaders = {
+      Authorization: `Bearer ${apiKey}`,
+      Version: '2021-07-28',
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    }
+
+    let ghlResponse = await fetch(`${HIGHLEVEL_BASE_URL}/contacts/`, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        Version: '2021-07-28',
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify(payload),
+      headers: requestHeaders,
+      body: JSON.stringify(payloadWithCustomFields),
     })
 
+    // Some HighLevel locations reject unknown custom fields; retry without them so leads still save.
     if (!ghlResponse.ok) {
-      const errorText = await ghlResponse.text()
+      const firstErrorText = await ghlResponse.text()
+      const maybeCustomFieldError = ghlResponse.status === 400
+        && /custom\s*field|field|invalid|schema|key/i.test(firstErrorText)
+
+      if (maybeCustomFieldError) {
+        ghlResponse = await fetch(`${HIGHLEVEL_BASE_URL}/contacts/`, {
+          method: 'POST',
+          headers: requestHeaders,
+          body: JSON.stringify(basePayload),
+        })
+
+        if (!ghlResponse.ok) {
+          const secondErrorText = await ghlResponse.text()
+          return res.status(ghlResponse.status).json({
+            error: 'Failed to submit lead to HighLevel.',
+            details: secondErrorText,
+            fallbackAttempted: true,
+            fallbackReason: firstErrorText,
+          })
+        }
+
+        const fallbackData = await ghlResponse.json()
+        return res.status(200).json({
+          ok: true,
+          contactId: fallbackData?.contact?.id || null,
+          warning: 'Lead was saved without custom fields. Verify custom field keys in HighLevel.',
+        })
+      }
+
       return res.status(ghlResponse.status).json({
         error: 'Failed to submit lead to HighLevel.',
-        details: errorText,
+        details: firstErrorText,
       })
     }
 

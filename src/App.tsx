@@ -74,7 +74,6 @@ export default function App() {
             {/* Core pages */}
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/contact" element={<Navigate to="/contact-us" replace />} />
-            <Route path="/contact-us/" element={<Navigate to="/contact-us" replace />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="/request-a-qoute" element={<RequestQuotePage />} />
 

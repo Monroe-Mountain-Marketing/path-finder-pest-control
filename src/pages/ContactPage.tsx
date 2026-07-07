@@ -31,7 +31,9 @@ export default function ContactPage() {
 
       if (!response.ok) {
         const responseBody = await response.json().catch(() => ({}))
-        throw new Error(responseBody?.error || 'Unable to submit your request right now.')
+        const details = typeof responseBody?.details === 'string' ? responseBody.details : ''
+        const baseError = responseBody?.error || 'Unable to submit your request right now.'
+        throw new Error(details ? `${baseError} ${details}` : baseError)
       }
 
       setSubmitted(true)

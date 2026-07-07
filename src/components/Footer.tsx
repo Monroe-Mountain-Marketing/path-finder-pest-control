@@ -82,7 +82,7 @@ export default function Footer() {
           <h4 className="font-bold text-[#568d22] uppercase text-sm tracking-widest mb-4">Quick Links</h4>
           <ul className="flex flex-col gap-2">
             {quickLinks.map((l) => (
-              <li key={l.path}>
+              <li key={`${l.label}-${l.path}`}>
                 <Link to={l.path} className="text-gray-600 text-sm hover:text-[#568d22] transition-colors">
                   {l.label}
                 </Link>
