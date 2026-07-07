@@ -11,10 +11,42 @@ export default function ContactPage() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setSubmitting(true)
+    setSubmitError('')
+
+    try {
+      const submitUrl = import.meta.env.VITE_FORM_SUBMIT_URL || '/api/highlevel/lead'
+      const response = await fetch(submitUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        const responseBody = await response.json().catch(() => ({}))
+        throw new Error(responseBody?.error || 'Unable to submit your request right now.')
+      }
+
+      setSubmitted(true)
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: '',
+      })
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Unable to submit your request right now.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -121,11 +153,17 @@ export default function ContactPage() {
                     placeholder="Describe your pest problem..."
                   />
                 </div>
+                {submitError ? (
+                  <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                    {submitError}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
+                  disabled={submitting}
                   className="bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
                 >
-                  Send Message
+                  {submitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             )}
