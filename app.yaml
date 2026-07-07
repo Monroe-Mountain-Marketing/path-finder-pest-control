@@ -13,7 +13,7 @@ static_sites:
       deploy_on_push: true
       repo: Monroe-Mountain-Marketing/path-finder-pest-control
     source_dir: /
-    build_command: npm run launch:check
+    build_command: npm run build
     output_dir: dist
     catchall_document: index.html
     envs:

@@ -23,7 +23,7 @@ static_sites:
       branch: dev
       deploy_on_push: true
     source_dir: /
-    build_command: npm run launch:check
+    build_command: npm run build
     output_dir: dist
     catchall_document: index.html
 ingress:
