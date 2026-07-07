@@ -17,8 +17,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const apiKey = process.env.HIGHLEVEL_API_KEY
-  const locationId = process.env.HIGHLEVEL_LOCATION_ID
+  const apiKey = process.env.VITE_GHL_API_KEY
+  const locationId = process.env.VITE_GHL_LOCATION_ID
 
   if (!apiKey || !locationId) {
     return res.status(500).json({ error: 'HighLevel is not configured on the server.' })
