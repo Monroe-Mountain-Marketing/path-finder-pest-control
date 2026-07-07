@@ -1,9 +1,23 @@
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DOMAIN_FAILED
+features:
+  - buildpack-stack=ubuntu-22
 name: pathfinder-pest-control
 region: nyc
 services: []
 static_sites:
-  - name: web
+  - name: path-finder-pest-control
     environment_slug: node-js
+    envs:
+      - key: VITE_GHL_API_KEY
+        scope: BUILD_TIME
+        type: SECRET
+        value: EV[1:r3mhWtrppcLoohcw7OO8hjg7GC7T/ePz:KlCbv5al1hTDbiEW33U7S+6Z6YYl76ctq8DBUpngXfvWCIss3PGFL+zIsz6qRQ6xIhjmpJr5V1c=]
+      - key: VITE_GHL_LOCATION_ID
+        scope: BUILD_TIME
+        type: SECRET
+        value: EV[1:zuN0Q6cwJOmyxMuEA/IAv/Cjvm/HKDTe:c368sDF9cQWEp4EODDyMn7teYj/8E06bDlzL+plbyuGDhzql]
     github:
       repo: Monroe-Mountain-Marketing/path-finder-pest-control
       branch: dev
@@ -12,8 +26,6 @@ static_sites:
     build_command: npm run launch:check
     output_dir: dist
     catchall_document: index.html
-    routes:
-      - path: /
 ingress:
   rules:
     - match:
@@ -88,3 +100,8 @@ ingress:
       redirect:
         uri: /bixby-pest-control
         redirect_code: 301
+    - match:
+        path:
+          prefix: /
+      component:
+        name: path-finder-pest-control

@@ -25,10 +25,21 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name = '', email = '', phone = '', service = '', message = '' } = req.body || {}
+    const parsedBody = typeof req.body === 'string'
+      ? JSON.parse(req.body || '{}')
+      : (req.body || {})
+
+    const { name = '', email = '', phone = '', service = '', message = '' } = parsedBody
 
     if (!name || !email || !phone) {
-      return res.status(400).json({ error: 'Name, email, and phone are required.' })
+      return res.status(400).json({
+        error: 'Name, email, and phone are required.',
+        details: {
+          hasName: Boolean(name),
+          hasEmail: Boolean(email),
+          hasPhone: Boolean(phone),
+        },
+      })
     }
 
     const { firstName, lastName } = parseName(name)
