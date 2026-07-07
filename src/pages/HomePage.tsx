@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { useState } from 'react'
 import ProcessSection from '../components/ProcessSection'
 import WhyUsSection from '../components/WhyUsSection'
 import ReviewsSection from '../components/ReviewsSection'
@@ -72,6 +73,52 @@ const homeFaqs = [
 ]
 
 export default function HomePage() {
+  const [quickFormData, setQuickFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
+  })
+  const [quickSubmitted, setQuickSubmitted] = useState(false)
+  const [quickSubmitting, setQuickSubmitting] = useState(false)
+  const [quickSubmitError, setQuickSubmitError] = useState('')
+
+  const handleQuickSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setQuickSubmitting(true)
+    setQuickSubmitError('')
+
+    try {
+      const submitUrl = import.meta.env.VITE_FORM_SUBMIT_URL || '/api/highlevel/lead'
+      const response = await fetch(submitUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(quickFormData),
+      })
+
+      if (!response.ok) {
+        const responseBody = await response.json().catch(() => ({}))
+        throw new Error(responseBody?.error || 'Unable to submit your request right now.')
+      }
+
+      setQuickSubmitted(true)
+      setQuickFormData({
+        name: '',
+        email: '',
+        phone: '',
+        service: '',
+        message: '',
+      })
+    } catch (error) {
+      setQuickSubmitError(error instanceof Error ? error.message : 'Unable to submit your request right now.')
+    } finally {
+      setQuickSubmitting(false)
+    }
+  }
+
   return (
     <>
       <Helmet>
@@ -133,8 +180,83 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right column intentionally empty — image is the background */}
-          <div />
+          <div className="hidden lg:block">
+            <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-200">
+              <p className="text-[#568d22] uppercase text-xs font-semibold tracking-widest mb-2">Quick Contact</p>
+              <h2 className="text-2xl font-bold text-[#112a44] mb-2">Get A Fast Response</h2>
+              <p className="text-gray-600 text-sm mb-5">Send your info and our team will contact you shortly.</p>
+
+              {quickSubmitted ? (
+                <div className="bg-[#568d22]/10 border border-[#568d22] rounded-xl p-4 text-center">
+                  <h3 className="text-lg font-bold text-[#112a44] mb-1">Request Sent</h3>
+                  <p className="text-gray-700 text-sm">Thanks, we will reach out as soon as possible.</p>
+                </div>
+              ) : (
+                <form onSubmit={handleQuickSubmit} className="flex flex-col gap-3">
+                  <input
+                    type="text"
+                    required
+                    value={quickFormData.name}
+                    onChange={(e) => setQuickFormData({ ...quickFormData, name: e.target.value })}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    placeholder="Full Name *"
+                  />
+                  <input
+                    type="email"
+                    required
+                    value={quickFormData.email}
+                    onChange={(e) => setQuickFormData({ ...quickFormData, email: e.target.value })}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    placeholder="Email *"
+                  />
+                  <input
+                    type="tel"
+                    required
+                    value={quickFormData.phone}
+                    onChange={(e) => setQuickFormData({ ...quickFormData, phone: e.target.value })}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    placeholder="Phone *"
+                  />
+                  <select
+                    value={quickFormData.service}
+                    onChange={(e) => setQuickFormData({ ...quickFormData, service: e.target.value })}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                  >
+                    <option value="">Service Needed</option>
+                    <option>Bed Bug Removal</option>
+                    <option>Rodent Control</option>
+                    <option>Termite Treatment</option>
+                    <option>Mosquito Control</option>
+                    <option>Cockroach Extermination</option>
+                    <option>Flea Control</option>
+                    <option>Gopher Removal</option>
+                    <option>Commercial Pest Control</option>
+                    <option>General Pest Control</option>
+                    <option>Other</option>
+                  </select>
+                  <textarea
+                    rows={3}
+                    value={quickFormData.message}
+                    onChange={(e) => setQuickFormData({ ...quickFormData, message: e.target.value })}
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22] resize-none"
+                    placeholder="Message (optional)"
+                  />
+                  {quickSubmitError ? (
+                    <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
+                      {quickSubmitError}
+                    </p>
+                  ) : null}
+                  <button
+                    type="submit"
+                    disabled={quickSubmitting}
+                    className="bg-[#fdd20a] text-[#112a44] font-bold px-6 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
+                  >
+                    {quickSubmitting ? 'Sending...' : 'Send Request'}
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
         </div>
       </section>
 
