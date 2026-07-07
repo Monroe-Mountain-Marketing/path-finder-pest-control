@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 ios**
 android**
+
+# Local environment files
+.env
+.env.*
+!.env.example
