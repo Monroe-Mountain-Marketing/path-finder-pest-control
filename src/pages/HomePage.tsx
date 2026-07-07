@@ -6,6 +6,7 @@ import WhyUsSection from '../components/WhyUsSection'
 import ReviewsSection from '../components/ReviewsSection'
 import AreasSection from '../components/AreasSection'
 import FAQSection from '../components/FAQSection'
+import { submitLead } from '../utils/submitLead'
 
 const services = [
   {
@@ -90,21 +91,7 @@ export default function HomePage() {
     setQuickSubmitError('')
 
     try {
-      const submitUrl = import.meta.env.VITE_FORM_SUBMIT_URL || '/api/highlevel/lead'
-      const response = await fetch(submitUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(quickFormData),
-      })
-
-      if (!response.ok) {
-        const responseBody = await response.json().catch(() => ({}))
-        const details = typeof responseBody?.details === 'string' ? responseBody.details : ''
-        const baseError = responseBody?.error || 'Unable to submit your request right now.'
-        throw new Error(details ? `${baseError} ${details}` : baseError)
-      }
+      await submitLead(quickFormData)
 
       setQuickSubmitted(true)
       setQuickFormData({

@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 import WhyUsSection from '../components/WhyUsSection'
+import { submitLead } from '../utils/submitLead'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -20,21 +21,7 @@ export default function ContactPage() {
     setSubmitError('')
 
     try {
-      const submitUrl = import.meta.env.VITE_FORM_SUBMIT_URL || '/api/highlevel/lead'
-      const response = await fetch(submitUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-
-      if (!response.ok) {
-        const responseBody = await response.json().catch(() => ({}))
-        const details = typeof responseBody?.details === 'string' ? responseBody.details : ''
-        const baseError = responseBody?.error || 'Unable to submit your request right now.'
-        throw new Error(details ? `${baseError} ${details}` : baseError)
-      }
+      await submitLead(formData)
 
       setSubmitted(true)
       setFormData({
