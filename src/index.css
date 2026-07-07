@@ -8,16 +8,16 @@
   --color-brand-cream: #faf8ee;
   --color-brand-dark: #1a202c;
   --color-brand-gray: #878787;
-  --font-family-sans: 'Inter', sans-serif;
-  --font-family-heading: 'Oswald', sans-serif;
+  --font-family-sans: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  --font-family-heading: 'Arial Narrow', 'Franklin Gothic Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Arial Narrow', 'Franklin Gothic Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -79,7 +79,7 @@ body {
 .wp-content h5,
 .wp-content h6 {
   color: #112a44;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Arial Narrow', 'Franklin Gothic Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.01em;
   margin-top: 2rem;

@@ -36,9 +36,13 @@ export default function WhyUsSection() {
           {/* Right - image */}
           <div className="relative">
             <img
-              src="/images/Resized_1000000201.jpeg"
+              src="/images/why-us-team.jpg"
               alt="Pathfinder Pest Control employee spraying for pest treatment"
+              width={900}
+              height={675}
               className="rounded-xl w-full h-auto object-cover shadow-lg"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

@@ -77,19 +77,24 @@ export default function HomePage() {
       <Helmet>
         <title>Affordable Pest Control Tulsa OK | Pathfinder Pest Control</title>
         <meta name="description" content="Pathfinder Pest Control is a trusted local exterminator providing safe, effective pest control solutions for homes and businesses throughout Tulsa, Oklahoma." />
+        <link rel="preload" as="image" href="/images/path-finder-hero.jpg" />
       </Helmet>
 
       {/* Hero */}
       <section
         className="relative min-h-[600px] flex items-center overflow-hidden"
       >
-        {/* Background image — mirrored */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/images/path-finder-hero.jpg)',
-            transform: 'scaleX(-1)',
-          }}
+        {/* Use a real image element so the browser can discover and prioritize LCP correctly. */}
+        <img
+          src="/images/path-finder-hero.jpg"
+          alt="Pathfinder Pest Control truck in Tulsa"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ transform: 'scaleX(-1)' }}
+          width={1920}
+          height={1080}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#112a44]/80" />
@@ -155,7 +160,11 @@ export default function HomePage() {
             <img
               src="/images/path-finder-pest-control-van.jpg"
               alt="Pathfinder pest control service van"
+              width={1200}
+              height={900}
               className="rounded-xl w-full shadow-lg object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

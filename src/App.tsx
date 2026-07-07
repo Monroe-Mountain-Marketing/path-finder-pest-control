@@ -1,19 +1,21 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
-import HomePage from './pages/HomePage'
-import ServicePage from './pages/ServicePage'
-import DirectServicePage from './pages/DirectServicePage'
-import SAPPage from './pages/SAPPage'
-import GopherRemovalPage from './pages/GopherRemovalPage'
-import MolesVolesPage from './pages/MolesVolesPage'
-import ResidentialPage from './pages/ResidentialPage'
-import CommercialPage from './pages/CommercialPage'
-import ContactPage from './pages/ContactPage'
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
-import BlogListingPage from './pages/BlogListingPage'
-import BlogPostPage from './pages/BlogPostPage'
-import GlossaryPage from './pages/GlossaryPage'
+
+const HomePage = lazy(() => import('./pages/HomePage'))
+const ServicePage = lazy(() => import('./pages/ServicePage'))
+const DirectServicePage = lazy(() => import('./pages/DirectServicePage'))
+const SAPPage = lazy(() => import('./pages/SAPPage'))
+const GopherRemovalPage = lazy(() => import('./pages/GopherRemovalPage'))
+const MolesVolesPage = lazy(() => import('./pages/MolesVolesPage'))
+const ResidentialPage = lazy(() => import('./pages/ResidentialPage'))
+const CommercialPage = lazy(() => import('./pages/CommercialPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
+const BlogListingPage = lazy(() => import('./pages/BlogListingPage'))
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'))
+const GlossaryPage = lazy(() => import('./pages/GlossaryPage'))
 
 // 404 page
 function NotFoundPage() {
@@ -47,54 +49,56 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Routes>
-        <Route element={<Layout />}>
-          {/* Home */}
-          <Route path="/" element={<HomePage />} />
+      <Suspense fallback={<div className="min-h-[40vh]" />}>
+        <Routes>
+          <Route element={<Layout />}>
+            {/* Home */}
+            <Route path="/" element={<HomePage />} />
 
-          {/* Service pages */}
-          <Route path="/service/:slug" element={<ServicePage />} />
+            {/* Service pages */}
+            <Route path="/service/:slug" element={<ServicePage />} />
 
-          {/* Legacy/alternate service paths */}
-          <Route path="/services/bed-bug-exterminator" element={<DirectServicePage slug="bed-bug-removal" />} />
-          <Route path="/rodent-control-tulsa" element={<DirectServicePage slug="rodent-control" />} />
+            {/* Legacy/alternate service paths */}
+            <Route path="/services/bed-bug-exterminator" element={<DirectServicePage slug="bed-bug-removal" />} />
+            <Route path="/rodent-control-tulsa" element={<DirectServicePage slug="rodent-control" />} />
 
-          {/* SAP (Service Area Pages) */}
-          <Route path="/sap/:city" element={<SAPPage />} />
+            {/* SAP (Service Area Pages) */}
+            <Route path="/sap/:city" element={<SAPPage />} />
 
-          {/* Standalone service pages */}
-          <Route path="/gopher-removal" element={<GopherRemovalPage />} />
-          <Route path="/moles-voles-removal" element={<MolesVolesPage />} />
-          <Route path="/residential-pest-control" element={<ResidentialPage />} />
-          <Route path="/commercial-pest-control" element={<CommercialPage />} />
+            {/* Standalone service pages */}
+            <Route path="/gopher-removal" element={<GopherRemovalPage />} />
+            <Route path="/moles-voles-removal" element={<MolesVolesPage />} />
+            <Route path="/residential-pest-control" element={<ResidentialPage />} />
+            <Route path="/commercial-pest-control" element={<CommercialPage />} />
 
-          {/* Core pages */}
-          <Route path="/contact-us" element={<ContactPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/request-a-qoute" element={<RequestQuotePage />} />
+            {/* Core pages */}
+            <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/request-a-qoute" element={<RequestQuotePage />} />
 
-          {/* Blog */}
-          <Route path="/new-articles" element={<BlogListingPage />} />
-          <Route path="/blog" element={<BlogListingPage />} />
-          <Route path="/category/pest-control" element={<BlogListingPage />} />
-          <Route path="/category/blog" element={<BlogListingPage />} />
-          <Route path="/category/uncategorized" element={<BlogListingPage />} />
-          <Route path="/glossary" element={<GlossaryPage />} />
+            {/* Blog */}
+            <Route path="/new-articles" element={<BlogListingPage />} />
+            <Route path="/blog" element={<BlogListingPage />} />
+            <Route path="/category/pest-control" element={<BlogListingPage />} />
+            <Route path="/category/blog" element={<BlogListingPage />} />
+            <Route path="/category/uncategorized" element={<BlogListingPage />} />
+            <Route path="/glossary" element={<GlossaryPage />} />
 
-          {/* Tag pages — redirect to blog listing (preserves SEO inbound links) */}
-          <Route path="/tag/:tag" element={<BlogListingPage />} />
+            {/* Tag pages — redirect to blog listing (preserves SEO inbound links) */}
+            <Route path="/tag/:tag" element={<BlogListingPage />} />
 
-          {/* WordPress template pages — redirect to home */}
-          <Route path="/template/*" element={<Navigate to="/" replace />} />
-          <Route path="/template_tag/*" element={<Navigate to="/" replace />} />
+            {/* WordPress template pages — redirect to home */}
+            <Route path="/template/*" element={<Navigate to="/" replace />} />
+            <Route path="/template_tag/*" element={<Navigate to="/" replace />} />
 
-          {/* Dynamic catch-all for all blog post slugs — must be last before * */}
-          <Route path="/:slug" element={<BlogPostPage />} />
+            {/* Dynamic catch-all for all blog post slugs — must be last before * */}
+            <Route path="/:slug" element={<BlogPostPage />} />
 
-          {/* 404 */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+            {/* 404 */}
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   )
 }

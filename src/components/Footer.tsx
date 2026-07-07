@@ -37,7 +37,11 @@ export default function Footer() {
             <img
               src="/images/2025-10-pathfinder-logo-website.png"
               alt="Pathfinder Pest Control"
+              width={500}
+              height={370}
               className="h-14 w-auto object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <p className="text-gray-600 text-sm leading-relaxed mb-4">

@@ -49,7 +49,12 @@ export default function Header() {
           <img
             src="/images/2025-10-pathfinder-logo-website.png"
             alt="Pathfinder Pest Control"
+            width={500}
+            height={370}
             className="h-12 w-auto object-contain"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </Link>
 

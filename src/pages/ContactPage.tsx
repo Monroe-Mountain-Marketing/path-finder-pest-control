@@ -188,7 +188,11 @@ export default function ContactPage() {
         <img
           src="/images/path-finder-pest-control-van.jpg"
           alt="Pathfinder Pest Control service van"
+          width={1200}
+          height={900}
           className="w-full max-h-[420px] object-cover"
+          loading="lazy"
+          decoding="async"
         />
       </section>
 
