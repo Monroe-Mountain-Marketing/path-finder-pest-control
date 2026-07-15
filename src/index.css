@@ -2,7 +2,7 @@
 
 @theme {
   --color-brand-navy: #112a44;
-  --color-brand-green: #568d22;
+  --color-brand-green: #f76a0c;
   --color-brand-yellow: #fdd20a;
   --color-brand-orange: #f76a0c;
   --color-brand-cream: #faf8ee;
@@ -32,7 +32,7 @@ body {
 
 /* Glossary term highlights — pure CSS tooltip (desktop), click drawer (mobile) */
 .g-term {
-  border-bottom: 1.5px dashed #568d22;
+  border-bottom: 1.5px dashed #f76a0c;
   cursor: help;
   position: relative;
   display: inline;
@@ -62,7 +62,7 @@ body {
   }
 
   .g-term:hover {
-    background-color: rgba(86,141,34,0.1);
+    background-color: rgba(247,106,12,0.1);
     border-radius: 2px;
   }
 
@@ -108,7 +108,7 @@ body {
 .wp-content li { margin-bottom: 0.4rem; }
 
 .wp-content a {
-  color: #568d22;
+  color: #f76a0c;
   text-decoration: underline;
 }
 .wp-content a:hover { color: #112a44; }
@@ -142,7 +142,7 @@ body {
 .wp-content tr:nth-child(even) td { background: #faf8ee; }
 
 .wp-content blockquote {
-  border-left: 4px solid #568d22;
+  border-left: 4px solid #f76a0c;
   padding-left: 1rem;
   margin: 1.5rem 0;
   color: #555;

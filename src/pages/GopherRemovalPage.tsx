@@ -24,7 +24,7 @@ export default function GopherRemovalPage() {
       {/* Hero */}
       <section className="bg-[#112a44] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="lg:order-2">
             <p className="text-[#fdd20a] uppercase text-sm font-semibold tracking-widest mb-3">GOPHER CONTROL EXPERTS</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Professional Gopher Removal in Tulsa OK
@@ -39,9 +39,9 @@ export default function GopherRemovalPage() {
               Schedule Gopher Removal Today
             </a>
           </div>
-          <div>
+          <div className="lg:order-1">
             <img
-              src="https://pathfinderpestcontrol.com/wp-content/uploads/2026/03/gopher-removal.webp"
+              src="/images/gopher.jpg"
               alt="Gopher removal Tulsa"
               className="rounded-xl shadow-2xl w-full object-cover"
             />
@@ -77,7 +77,7 @@ export default function GopherRemovalPage() {
               'Visible tunnel openings near landscaping',
             ].map((sign) => (
               <li key={sign} className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-6 h-6 bg-[#568d22] rounded-full flex items-center justify-center mt-0.5">
+                <div className="flex-shrink-0 w-6 h-6 bg-[#f76a0c] rounded-full flex items-center justify-center mt-0.5">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -104,7 +104,7 @@ export default function GopherRemovalPage() {
               { step: 'Prevention Strategy', desc: 'After removal, we provide recommendations to help prevent future infestations and reduce attractants around the yard.' },
             ].map((item) => (
               <div key={item.step} className="bg-[#faf8ee] rounded-xl p-6">
-                <div className="w-8 h-8 bg-[#568d22] rounded-full flex items-center justify-center mb-3">
+                <div className="w-8 h-8 bg-[#f76a0c] rounded-full flex items-center justify-center mb-3">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -138,7 +138,7 @@ export default function GopherRemovalPage() {
           </div>
           <div>
             <img
-              src="https://pathfinderpestcontrol.com/wp-content/uploads/2026/03/emergency-goher-removal-tulsa.webp"
+              src="/images/gopher.jpg"
               alt="Emergency gopher removal Tulsa"
               className="rounded-xl shadow-md w-full"
             />

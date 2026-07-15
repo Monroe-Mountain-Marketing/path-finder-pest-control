@@ -20,11 +20,11 @@ export default function MolesVolesPage() {
 
       {/* Hero */}
       <section className="bg-[#112a44] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="max-w-3xl">
+        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="lg:order-2">
             <p className="text-[#fdd20a] uppercase text-sm font-semibold tracking-widest mb-3">LAWN PEST CONTROL</p>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Moles & Voles Removal Service</h1>
-            <p className="text-gray-300 text-lg mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Moles & Voles Removal Service</h1>
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
               Professional moles and voles removal available now in Tulsa and surrounding areas. Protect your lawn from tunneling damage with expert removal from Pathfinder Pest Control.
             </p>
             <a
@@ -33,6 +33,13 @@ export default function MolesVolesPage() {
             >
               Schedule Removal Today
             </a>
+          </div>
+          <div className="lg:order-1">
+            <img
+              src="/images/moles.jpg"
+              alt="Moles and voles removal service in Tulsa"
+              className="rounded-xl shadow-2xl w-full object-cover"
+            />
           </div>
         </div>
       </section>

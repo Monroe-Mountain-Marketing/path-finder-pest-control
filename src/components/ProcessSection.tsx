@@ -19,7 +19,7 @@ export default function ProcessSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {steps.map((step) => (
             <div key={step.num} className="text-center">
-              <div className="w-16 h-16 rounded-full bg-[#568d22] flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full bg-[#f76a0c] flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 {step.num}
               </div>
               <h3 className="font-bold text-base mb-2">{step.title}</h3>

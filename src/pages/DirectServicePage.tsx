@@ -15,7 +15,7 @@ export default function DirectServicePage({ slug }: DirectServicePageProps) {
   if (!service) return (
     <div className="py-20 text-center">
       <h1 className="text-3xl font-bold text-[#112a44]">Service Not Found</h1>
-      <Link to="/" className="mt-4 inline-block text-[#568d22]">Return Home</Link>
+      <Link to="/" className="mt-4 inline-block text-[#f76a0c]">Return Home</Link>
     </div>
   )
 

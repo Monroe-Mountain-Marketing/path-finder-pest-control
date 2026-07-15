@@ -54,7 +54,7 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-xs text-[#112a44] hover:bg-[#568d22] hover:text-white transition-colors"
+                className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-xs text-[#112a44] hover:bg-[#f76a0c] hover:text-white transition-colors"
                 aria-label={s.label}
               >
                 {s.icon}
@@ -65,11 +65,11 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-bold text-[#568d22] uppercase text-sm tracking-widest mb-4">Services</h4>
+          <h4 className="font-bold text-[#f76a0c] uppercase text-sm tracking-widest mb-4">Services</h4>
           <ul className="flex flex-col gap-2">
             {services.map((s) => (
               <li key={s.path}>
-                <Link to={s.path} className="text-gray-600 text-sm hover:text-[#568d22] transition-colors">
+                <Link to={s.path} className="text-gray-600 text-sm hover:text-[#f76a0c] transition-colors">
                   {s.label}
                 </Link>
               </li>
@@ -79,11 +79,11 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-bold text-[#568d22] uppercase text-sm tracking-widest mb-4">Quick Links</h4>
+          <h4 className="font-bold text-[#f76a0c] uppercase text-sm tracking-widest mb-4">Quick Links</h4>
           <ul className="flex flex-col gap-2">
             {quickLinks.map((l) => (
               <li key={`${l.label}-${l.path}`}>
-                <Link to={l.path} className="text-gray-600 text-sm hover:text-[#568d22] transition-colors">
+                <Link to={l.path} className="text-gray-600 text-sm hover:text-[#f76a0c] transition-colors">
                   {l.label}
                 </Link>
               </li>
@@ -93,10 +93,10 @@ export default function Footer() {
 
         {/* Contact info */}
         <div>
-          <h4 className="font-bold text-[#568d22] uppercase text-sm tracking-widest mb-4">Contact Us in Tulsa</h4>
+          <h4 className="font-bold text-[#f76a0c] uppercase text-sm tracking-widest mb-4">Contact Us in Tulsa</h4>
           <div className="flex flex-col gap-3 text-sm text-gray-600">
             <p>3240 S 82nd E Ave Suite A,<br />Tulsa, OK 74145</p>
-            <a href="tel:9188566554" className="hover:text-[#568d22] transition-colors font-semibold text-[#112a44]">
+            <a href="tel:9188566554" className="hover:text-[#f76a0c] transition-colors font-semibold text-[#112a44]">
               +1 918-856-6554
             </a>
             <div>

@@ -52,7 +52,7 @@ export default function SAPPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {sap.services.map((s) => (
               <div key={s} className="flex items-center gap-2 bg-[#faf8ee] rounded-lg px-4 py-3">
-                <div className="w-6 h-6 bg-[#568d22] rounded flex items-center justify-center flex-shrink-0">
+                <div className="w-6 h-6 bg-[#f76a0c] rounded flex items-center justify-center flex-shrink-0">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -65,7 +65,7 @@ export default function SAPPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#568d22] text-white py-16">
+      <section className="bg-[#f76a0c] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Schedule Pest Control in {sap.city} Today</h2>
           <p className="text-green-100 mb-8">
@@ -80,7 +80,7 @@ export default function SAPPage() {
             </a>
             <Link
               to="/contact-us"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#568d22] transition-colors"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#f76a0c] transition-colors"
             >
               Request a Quote
             </Link>

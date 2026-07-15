@@ -65,7 +65,7 @@ export default function ReviewsSection() {
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <div>
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-1">CUSTOMER REVIEWS</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-1">CUSTOMER REVIEWS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44]">What Our Customers Say</h2>
           </div>
           {/* Google badge */}
@@ -121,7 +121,7 @@ export default function ReviewsSection() {
               href="https://g.page/r/CWjh5CqxFn_YEBM/review"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 bg-[#112a44] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#568d22] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 bg-[#112a44] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#f76a0c] transition-colors"
             >
               Leave Us a Review
             </a>
@@ -156,7 +156,7 @@ export default function ReviewsSection() {
             href="https://g.page/r/CWjh5CqxFn_YEBM/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#112a44] text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-[#568d22] transition-colors"
+            className="inline-flex items-center gap-2 bg-[#112a44] text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-[#f76a0c] transition-colors"
           >
             Leave Us a Review
           </a>

@@ -84,14 +84,14 @@ export default function GlossaryPage() {
           {filtered.length === 0 ? (
             <div className="text-center py-20 text-gray-500">
               <p className="text-lg font-semibold mb-2">No terms found</p>
-              <button onClick={() => { setSearch(''); setActiveCategory('All') }} className="text-[#568d22] hover:underline text-sm">Clear filters</button>
+              <button onClick={() => { setSearch(''); setActiveCategory('All') }} className="text-[#f76a0c] hover:underline text-sm">Clear filters</button>
             </div>
           ) : (
             <div className="flex flex-col gap-10">
               {letters.map(letter => (
                 <div key={letter} id={`letter-${letter}`}>
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-3xl font-bold text-[#568d22] font-display">{letter}</span>
+                    <span className="text-3xl font-bold text-[#f76a0c] font-display">{letter}</span>
                     <div className="flex-grow h-px bg-gray-200" />
                   </div>
                   <div className="grid sm:grid-cols-1 gap-3">
@@ -99,7 +99,7 @@ export default function GlossaryPage() {
                       <div key={t.term} className="bg-[#faf8ee] rounded-xl p-5 flex flex-col sm:flex-row gap-3">
                         <div className="sm:w-48 flex-shrink-0">
                           <h2 className="font-bold text-[#112a44] text-base leading-snug">{t.term}</h2>
-                          <span className="text-xs text-[#568d22] font-semibold bg-[#568d22]/10 px-2 py-0.5 rounded-full mt-1 inline-block">{t.category}</span>
+                          <span className="text-xs text-[#f76a0c] font-semibold bg-[#f76a0c]/10 px-2 py-0.5 rounded-full mt-1 inline-block">{t.category}</span>
                         </div>
                         <p className="text-gray-600 text-sm leading-relaxed flex-grow">{t.definition}</p>
                       </div>

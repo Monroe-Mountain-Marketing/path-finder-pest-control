@@ -55,7 +55,7 @@ export default function GlossaryContent({ html, containerClassName = '' }: Gloss
                 </svg>
               </button>
             </div>
-            <span className="inline-block text-xs bg-[#568d22]/10 text-[#568d22] font-semibold px-3 py-1 rounded-full mb-3">
+            <span className="inline-block text-xs bg-[#f76a0c]/10 text-[#f76a0c] font-semibold px-3 py-1 rounded-full mb-3">
               {drawer.category}
             </span>
             <p className="text-gray-600 leading-relaxed">{drawer.definition}</p>

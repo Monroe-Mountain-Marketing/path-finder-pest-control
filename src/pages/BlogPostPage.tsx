@@ -61,7 +61,7 @@ export default function BlogPostPage() {
             {post.tags.length > 0 && (
               <div className="mt-8 flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
-                  <span key={tag} className="bg-[#faf8ee] text-[#568d22] text-xs font-semibold px-3 py-1 rounded-full">
+                  <span key={tag} className="bg-[#faf8ee] text-[#f76a0c] text-xs font-semibold px-3 py-1 rounded-full">
                     #{tag}
                   </span>
                 ))}
@@ -114,7 +114,7 @@ export default function BlogPostPage() {
                 {relatedPosts.map((rp) => (
                   <Link key={rp.slug} to={`/${rp.slug}`} className="group border-b border-gray-100 pb-4 last:border-0">
                     <p className="text-xs text-gray-400 mb-1">{rp.date}</p>
-                    <h4 className="font-semibold text-[#112a44] text-sm group-hover:text-[#568d22] transition-colors leading-snug">
+                    <h4 className="font-semibold text-[#112a44] text-sm group-hover:text-[#f76a0c] transition-colors leading-snug">
                       {rp.title}
                     </h4>
                   </Link>

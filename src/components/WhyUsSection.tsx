@@ -13,14 +13,14 @@ export default function WhyUsSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left */}
           <div>
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">WHY CHOOSE US</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">WHY CHOOSE US</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-6">
               Why We Are The Best Pest Control<br />Service Provider in Tulsa
             </h2>
             <div className="flex flex-col gap-5">
               {reasons.map((r) => (
                 <div key={r.title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#568d22] rounded flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-[#f76a0c] rounded flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -62,7 +62,7 @@ export default function WhyUsSection() {
             >
               CALL NOW
             </a>
-            <span className="inline-flex items-center justify-center font-bold text-[#568d22] text-sm">
+            <span className="inline-flex items-center justify-center font-bold text-[#f76a0c] text-sm">
               Best Exterminator In Tulsa
             </span>
           </div>

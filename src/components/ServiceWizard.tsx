@@ -180,7 +180,7 @@ export default function ServiceWizard() {
                   <Link
                     to={result.path}
                     onClick={dismiss}
-                    className="block text-center bg-[#568d22] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#112a44] transition-colors"
+                    className="block text-center bg-[#f76a0c] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#112a44] transition-colors"
                   >
                     {result.cta}
                   </Link>
@@ -210,11 +210,11 @@ export default function ServiceWizard() {
                     <button
                       key={i}
                       onClick={() => choose(opt)}
-                      className="flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl border border-gray-200 hover:border-[#568d22] hover:bg-[#faf8ee] transition-colors group"
+                      className="flex items-center gap-3 w-full text-left px-4 py-3 rounded-xl border border-gray-200 hover:border-[#f76a0c] hover:bg-[#faf8ee] transition-colors group"
                     >
                       <span className="text-xl w-8 text-center flex-shrink-0">{opt.icon}</span>
-                      <span className="text-sm font-medium text-[#112a44] group-hover:text-[#568d22]">{opt.label}</span>
-                      <svg className="w-4 h-4 text-gray-300 group-hover:text-[#568d22] ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <span className="text-sm font-medium text-[#112a44] group-hover:text-[#f76a0c]">{opt.label}</span>
+                      <svg className="w-4 h-4 text-gray-300 group-hover:text-[#f76a0c] ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </button>
@@ -227,7 +227,7 @@ export default function ServiceWizard() {
                 )}
                 <p className="text-center text-xs text-gray-400 mt-4">
                   Already know what you need?{' '}
-                  <Link to="/contact-us" onClick={dismiss} className="text-[#568d22] hover:underline font-semibold">
+                  <Link to="/contact-us" onClick={dismiss} className="text-[#f76a0c] hover:underline font-semibold">
                     Skip to contact us
                   </Link>
                 </p>

@@ -49,7 +49,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Expert rodent control in Tulsa, OK. We remove mice and rats, seal entry points, and prevent future infestations.',
     heroTitle: 'Professional Rodent Control in Tulsa OK',
     heroSubtitle: 'We handle rodent problems by removing mice and rats, sealing entry points, and helping prevent future infestations in homes and businesses throughout Tulsa.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/rodent-control-300x200.jpg',
+    heroImage: '/images/rodents.jpeg',
     sections: [
       {
         heading: 'Signs of a Rodent Infestation',
@@ -58,7 +58,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Rodent Removal Process',
         content: 'Our technicians begin with a thorough property inspection to identify active entry points, nesting areas, and runways. We then deploy appropriate trapping methods or bait stations. Once rodents are removed, we seal entry points to prevent re-entry. We also provide recommendations to eliminate attractants like food sources and harborage areas.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/rodent-control-300x200.jpg',
+        image: '/images/rodents.jpeg',
       },
       {
         heading: 'Preventing Future Rodent Problems',
@@ -107,7 +107,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Expert cockroach extermination in Tulsa, OK. Eliminate roach infestations with professional treatments from Pathfinder Pest Control.',
     heroTitle: 'Professional Cockroach Extermination in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control eliminates cockroach infestations using targeted treatments that reach all hiding spots and prevent re-infestation.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/cockroach.jpeg',
     sections: [
       {
         heading: 'Why Cockroaches Are Hard to Eliminate',
@@ -116,7 +116,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Cockroach Treatment Methods',
         content: 'We use gel baits, residual insecticides, and insect growth regulators to target cockroaches at every life stage. Our technicians apply treatments in critical areas including under appliances, inside cabinets, around plumbing, and in wall voids. We also identify and address factors that attract cockroaches, such as food debris, moisture, and entry points.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/cockroach.jpeg',
       },
       {
         heading: 'Preparation for Cockroach Treatment',
@@ -136,12 +136,12 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional flea control in Tulsa, OK. Eliminate fleas from your home and yard with effective treatments from Pathfinder Pest Control.',
     heroTitle: 'Professional Flea Control in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control removes fleas from homes and yards with effective treatments that protect pets and families from recurring infestations.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/flea.jpg',
+    heroImage: '/images/flea.jpeg',
     sections: [
       {
         heading: 'Understanding Flea Infestations',
         content: 'Fleas are small jumping insects that feed on the blood of mammals and birds. In Oklahoma, flea season typically runs from late spring through fall, though indoor infestations can persist year-round. Pets are the most common source of flea infestations, but fleas can also enter homes on clothing, used furniture, or through wildlife activity near the property.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/flea.jpg',
+        image: '/images/flea.jpeg',
       },
       {
         heading: 'Our Flea Treatment Approach',
@@ -165,7 +165,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional fumigation services in Tulsa, OK. Complete pest elimination with expert fumigation from Pathfinder Pest Control.',
     heroTitle: 'Professional Fumigation Services in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control provides professional fumigation services for severe infestations that require comprehensive pest elimination throughout your property.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/fumigation.png',
     sections: [
       {
         heading: 'When is Fumigation Necessary?',
@@ -174,7 +174,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Fumigation Process',
         content: 'The fumigation process involves sealing the structure and introducing a gas fumigant that penetrates all areas of the building. The gas is then aerated before re-entry is permitted. Our certified fumigation technicians handle every step of the process safely and in compliance with all applicable regulations. We will provide detailed preparation instructions and work with you to minimize inconvenience.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/fumigation.png',
       },
       {
         heading: 'Safety During Fumigation',
@@ -194,12 +194,12 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional home pest inspection in Tulsa, OK. Identify pest problems early with a thorough inspection from Pathfinder Pest Control.',
     heroTitle: 'Professional Home Pest Inspection in Tulsa OK',
     heroSubtitle: 'Every service begins with a detailed pest inspection to identify pests, entry points, infestation levels, and conditions that attract pests to your property.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+    heroImage: '/images/inspection.png',
     sections: [
       {
         heading: 'What is Included in a Pest Inspection?',
         content: 'Our comprehensive pest inspection covers all accessible areas of your home including the foundation, crawl space, attic, garage, kitchen, bathrooms, and all living spaces. We check for evidence of termites, rodents, cockroaches, bed bugs, ants, spiders, and other common pests. We also identify conditions conducive to pest activity such as moisture issues, wood-to-soil contact, and structural gaps.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+        image: '/images/inspection.png',
       },
       {
         heading: 'When Do You Need a Pest Inspection?',
@@ -223,7 +223,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional mosquito control in Tulsa, OK. Reduce mosquito populations and protect your outdoor spaces with Pathfinder Pest Control.',
     heroTitle: 'Professional Mosquito Control in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control reduces mosquito populations around your property with targeted treatments designed to make outdoor spaces safer and more comfortable.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/mosquitos.jpeg',
     sections: [
       {
         heading: 'Mosquito Season in Oklahoma',
@@ -232,7 +232,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Mosquito Treatment Program',
         content: 'Our mosquito control program includes property inspection to identify breeding sites, treatment of vegetation where adult mosquitoes rest during the day, elimination or treatment of standing water breeding sites, and optional installation of professional mosquito traps for ongoing control. Treatments are applied on a recurring basis throughout mosquito season for continuous protection.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/mosquitos.jpeg',
       },
       {
         heading: 'Protecting Your Family from Mosquitoes',
@@ -252,7 +252,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional spider extermination in Tulsa, OK. Remove dangerous and nuisance spiders with expert treatment from Pathfinder Pest Control.',
     heroTitle: 'Professional Spider Exterminator in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control safely removes spiders from homes and businesses using targeted treatments that eliminate current infestations and prevent future activity.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/spiders.jpeg',
     sections: [
       {
         heading: 'Common Spiders in Tulsa, Oklahoma',
@@ -261,7 +261,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Spider Control Approach',
         content: 'Our spider extermination service includes inspecting the interior and exterior of your property for webs, egg sacs, and entry points, treating all areas where spiders are active with residual insecticides, clearing webs and egg sacs, and sealing entry points where spiders are entering. We pay special attention to areas like garages, attics, basements, and storage areas where spiders commonly nest.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/spiders.jpeg',
       },
       {
         heading: 'Prevention Tips',
@@ -281,7 +281,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional termite treatment in Tulsa, OK. Protect your home from termite damage with expert solutions from Pathfinder Pest Control.',
     heroTitle: 'Professional Termite Treatment in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control provides effective termite treatment and prevention services to protect your home from the structural damage that termites can cause.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/termite.jpeg',
     sections: [
       {
         heading: 'The Cost of Termite Damage',
@@ -290,7 +290,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Signs of Termite Activity',
         content: 'Early detection is critical for minimizing termite damage. Warning signs include mud tubes running along foundations or walls, hollow-sounding wood when tapped, buckling or blistering wood surfaces, piles of wings near windowsills or doors (from swarmers), small holes in drywall, and frass (termite droppings) that look like sawdust or coffee grounds.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/termite.jpeg',
       },
       {
         heading: 'Our Termite Treatment Solutions',
@@ -310,12 +310,12 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Safe wasp and hornet removal in Tulsa, OK. Let the professionals handle dangerous stinging insect nests.',
     heroTitle: 'Wasp & Hornet Elimination in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control safely removes wasp and hornet nests and reduces stinging insect activity around homes and businesses in Tulsa.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/wasp-removal-300x200.jpg',
+    heroImage: '/images/wasps.jpeg',
     sections: [
       {
         heading: 'Common Stinging Insects in Tulsa',
         content: 'Tulsa area homeowners commonly encounter yellowjackets, paper wasps, bald-faced hornets, and mud daubers. Yellowjackets and bald-faced hornets are the most aggressive and will sting repeatedly when threatened. Paper wasps are less aggressive but will defend their nests. All of these stinging insects can pose a serious health risk to people allergic to their venom.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/wasp-removal-300x200.jpg',
+        image: '/images/wasps.jpeg',
       },
       {
         heading: 'Why Professional Nest Removal is Important',
@@ -339,12 +339,12 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Humane wildlife removal in Tulsa, OK. Remove raccoons, squirrels, opossums, and other wildlife from your property.',
     heroTitle: 'Professional Wildlife Removal in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control provides humane wildlife removal services to safely remove raccoons, squirrels, opossums, and other nuisance wildlife from Tulsa homes and properties.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    heroImage: '/images/wildlife.jpg',
     sections: [
       {
         heading: 'Common Wildlife Problems in Tulsa',
         content: 'Urban and suburban areas in Tulsa regularly experience nuisance wildlife issues. Raccoons frequently raid garbage cans and enter attics through damaged soffits or roof vents. Squirrels gnaw through roofing materials and establish nests in attics. Opossums take up residence under decks and porches. Skunks dig up lawns searching for grubs. All of these animals can cause property damage and pose health risks.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+        image: '/images/wildlife.jpg',
       },
       {
         heading: 'Our Humane Wildlife Removal Process',

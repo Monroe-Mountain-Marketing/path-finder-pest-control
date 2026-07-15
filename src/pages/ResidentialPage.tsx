@@ -16,43 +16,43 @@ const services = [
     title: 'Rodent Control',
     desc: 'Remove mice and rats, seal entry points, and prevent future infestations from taking hold.',
     path: '/service/rodent-control',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/rodent-control-300x200.jpg',
+    img: '/images/rodents.jpeg',
   },
   {
     title: 'Cockroach Extermination',
     desc: 'Break the roach life cycle with gel baits and IGRs that eliminate colonies at the source.',
     path: '/service/cockroach-extermination',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    img: '/images/cockroach.jpeg',
   },
   {
     title: 'Flea Control',
     desc: 'Treat homes and yards to protect pets and families from recurring flea infestations.',
     path: '/service/flea-control',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/flea.jpg',
+    img: '/images/flea.jpeg',
   },
   {
     title: 'Mosquito Control',
     desc: 'Recurring yard treatments that reduce mosquito populations and make outdoor spaces enjoyable.',
     path: '/service/mosquito-control',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    img: '/images/mosquitos.jpeg',
   },
   {
     title: 'Termite Treatment',
     desc: 'Soil barriers, bait systems, and annual monitoring protect your home\'s structural integrity.',
     path: '/service/termite-treatment',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    img: '/images/termite.jpeg',
   },
   {
     title: 'Spider Exterminator',
     desc: 'Safe removal of brown recluse, black widow, and other nuisance spiders with entry point sealing.',
     path: '/service/spider-exterminator',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    img: '/images/spiders.jpeg',
   },
   {
     title: 'Wasp & Hornet Elimination',
     desc: 'Professional nest removal and void treatment so stinging insects stay away from your family.',
     path: '/service/wasp-hornet-elimination',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/wasp-removal-300x200.jpg',
+    img: '/images/wasps.jpeg',
   },
 ]
 
@@ -83,8 +83,8 @@ export default function ResidentialPage() {
 
       {/* Hero */}
       <section className="relative min-h-[560px] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/images/path-finder-pest-control-van.jpg)' }} />
-        <div className="absolute inset-0 bg-[#112a44]/82" />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/images/residential.jpeg)' }} />
+        <div className="absolute inset-0 bg-[#112a44]/88" />
         <div className="relative max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center w-full">
           <div className="text-white">
             <p className="text-[#fdd20a] uppercase text-sm font-semibold tracking-widest mb-3">HOME PROTECTION</p>
@@ -124,14 +124,14 @@ export default function ResidentialPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">WHY IT MATTERS</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">WHY IT MATTERS</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-4">Why Tulsa Homeowners Choose Professional Pest Control</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Pest problems don't solve themselves. Oklahoma's warm climate creates year-round pressure from dozens of pest species that threaten your family's health, comfort, and home value.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map(b => (
               <div key={b.title} className="bg-[#faf8ee] rounded-xl p-6">
-                <div className="w-8 h-8 bg-[#568d22] rounded-lg flex items-center justify-center mb-4">
+                <div className="w-8 h-8 bg-[#f76a0c] rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -158,7 +158,7 @@ export default function ResidentialPage() {
       <section className="py-20 bg-[#faf8ee]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">OUR HOME SERVICES</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">OUR HOME SERVICES</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44]">Residential Pest Control Services We Provide</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -166,7 +166,7 @@ export default function ResidentialPage() {
               <Link key={s.path} to={s.path} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
                 <img src={s.img} alt={s.title} className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="p-4">
-                  <h3 className="font-bold text-[#112a44] mb-1 group-hover:text-[#568d22] transition-colors">{s.title}</h3>
+                  <h3 className="font-bold text-[#112a44] mb-1 group-hover:text-[#f76a0c] transition-colors">{s.title}</h3>
                   <p className="text-gray-600 text-xs leading-relaxed">{s.desc}</p>
                 </div>
               </Link>
@@ -181,7 +181,7 @@ export default function ResidentialPage() {
       <FAQSection faqs={faqs} title="Residential Pest Control FAQ" />
 
       {/* Bottom CTA */}
-      <section className="bg-[#568d22] text-white py-16">
+      <section className="bg-[#f76a0c] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Protect Your Tulsa Home Today</h2>
           <p className="text-green-100 mb-8 text-lg">Same-day service available. Licensed technicians. 100% satisfaction guarantee.</p>
@@ -189,7 +189,7 @@ export default function ResidentialPage() {
             <a href="tel:9188566554" className="inline-flex items-center justify-center bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-white transition-colors">
               +1 918-856-6554
             </a>
-            <Link to="/contact-us" className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#568d22] transition-colors">
+            <Link to="/contact-us" className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#f76a0c] transition-colors">
               Request a Free Quote
             </Link>
           </div>

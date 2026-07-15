@@ -30,19 +30,19 @@ const services = [
   {
     title: 'Mosquito Control',
     desc: 'Pathfinder Pest Control reduces mosquito populations around your property with treatments designed to make outdoor spaces safer and more comfortable.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/residual-insecticide-300x200.jpg',
+    img: '/images/mosquitos.jpeg',
     path: '/service/mosquito-control',
   },
   {
     title: 'Rodent Control',
     desc: 'We handle rodent problems by removing mice and rats, sealing entry points, and helping prevent future infestations in homes.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/rodent-control-300x200.jpg',
+    img: '/images/rodents.jpeg',
     path: '/service/rodent-control',
   },
   {
     title: 'Wasp & Hornet Control',
     desc: 'Pathfinder Pest Control safely removes wasp and hornet nests and reduces stinging insect activity around homes and businesses.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/wasp-removal-300x200.jpg',
+    img: '/images/wasps.jpeg',
     path: '/service/wasp-hornet-elimination',
   },
 ]
@@ -118,7 +118,7 @@ export default function HomePage() {
 
       {/* Hero */}
       <section
-        className="relative min-h-[600px] flex items-center overflow-hidden"
+        className="relative min-h-[600px] flex items-center overflow-visible"
       >
         {/* Use a real image element so the browser can discover and prioritize LCP correctly. */}
         <img
@@ -134,7 +134,7 @@ export default function HomePage() {
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#112a44]/80" />
-        <div className="relative max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center w-full">
+        <div className="relative max-w-7xl mx-auto px-4 pt-24 pb-40 grid lg:grid-cols-2 gap-12 items-center w-full">
           <div className="text-white">
             <p className="text-[#fdd20a] uppercase text-sm font-semibold tracking-widest mb-3">Tulsa's Trusted Exterminators</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -157,26 +157,16 @@ export default function HomePage() {
                 Get a Free Inspection
               </Link>
             </div>
-
-            {/* Stats */}
-            <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {stats.map((s) => (
-                <div key={s.label} className="text-center">
-                  <div className="text-2xl font-bold text-[#fdd20a]">{s.value}</div>
-                  <div className="text-xs text-gray-300 mt-1">{s.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="hidden lg:block">
             <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-200">
-              <p className="text-[#568d22] uppercase text-xs font-semibold tracking-widest mb-2">Quick Contact</p>
+              <p className="text-[#f76a0c] uppercase text-xs font-semibold tracking-widest mb-2">Quick Contact</p>
               <h2 className="text-2xl font-bold text-[#112a44] mb-2">Get A Fast Response</h2>
               <p className="text-gray-600 text-sm mb-5">Send your info and our team will contact you shortly.</p>
 
               {quickSubmitted ? (
-                <div className="bg-[#568d22]/10 border border-[#568d22] rounded-xl p-4 text-center">
+                <div className="bg-[#f76a0c]/10 border border-[#f76a0c] rounded-xl p-4 text-center">
                   <h3 className="text-lg font-bold text-[#112a44] mb-1">Request Sent</h3>
                   <p className="text-gray-700 text-sm">Thanks, we will reach out as soon as possible.</p>
                 </div>
@@ -187,7 +177,7 @@ export default function HomePage() {
                     required
                     value={quickFormData.name}
                     onChange={(e) => setQuickFormData({ ...quickFormData, name: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                     placeholder="Full Name *"
                   />
                   <input
@@ -195,7 +185,7 @@ export default function HomePage() {
                     required
                     value={quickFormData.email}
                     onChange={(e) => setQuickFormData({ ...quickFormData, email: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                     placeholder="Email *"
                   />
                   <input
@@ -203,13 +193,13 @@ export default function HomePage() {
                     required
                     value={quickFormData.phone}
                     onChange={(e) => setQuickFormData({ ...quickFormData, phone: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                     placeholder="Phone *"
                   />
                   <select
                     value={quickFormData.service}
                     onChange={(e) => setQuickFormData({ ...quickFormData, service: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                   >
                     <option value="">Service Needed</option>
                     <option>Bed Bug Removal</option>
@@ -227,7 +217,7 @@ export default function HomePage() {
                     rows={3}
                     value={quickFormData.message}
                     onChange={(e) => setQuickFormData({ ...quickFormData, message: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22] resize-none"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c] resize-none"
                     placeholder="Message (optional)"
                   />
                   {quickSubmitError ? (
@@ -247,13 +237,27 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        {/* Floating Stats Box */}
+        <div className="absolute left-1/2 bottom-0 z-20 w-full max-w-7xl -translate-x-1/2 translate-y-1/2 px-4">
+          <div className="rounded-2xl bg-brand-navy shadow-2xl ring-1 ring-white/10 px-6 py-6 md:px-10 md:py-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              {stats.map((s) => (
+                <div key={s.label} className="text-center py-2">
+                  <div className="text-4xl md:text-5xl font-bold text-brand-yellow leading-none">{s.value}</div>
+                  <div className="mt-2 text-base md:text-lg text-gray-100 font-medium">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-36 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">ABOUT PATHFINDER PEST CONTROL</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">ABOUT PATHFINDER PEST CONTROL</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-6">
               Tulsa's Trusted Pest Control Company
             </h2>
@@ -262,15 +266,15 @@ export default function HomePage() {
             </p>
             <Link
               to="/contact-us"
-              className="inline-flex items-center gap-2 bg-[#568d22] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#112a44] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#f76a0c] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#112a44] transition-colors"
             >
               More About Us →
             </Link>
           </div>
           <div>
             <img
-              src="/images/path-finder-pest-control-van.jpg"
-              alt="Pathfinder pest control service van"
+              src="/images/pathfinder-home.png"
+              alt="Pathfinder Pest Control home service"
               width={1200}
               height={900}
               className="rounded-xl w-full shadow-lg object-cover"
@@ -285,7 +289,7 @@ export default function HomePage() {
       <section className="py-20 bg-[#faf8ee]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">OUR SERVICES</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">OUR SERVICES</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-4">Comprehensive Pest Control Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our pest control services cover a wide range of common pests that affect homes and businesses throughout the Tulsa area. From insects to rodents, our trained technicians use targeted treatments to eliminate infestations and help prevent future pest problems.
@@ -308,7 +312,7 @@ export default function HomePage() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#112a44] mb-2">{service.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">{service.desc}</p>
-                  <span className="text-[#568d22] font-semibold text-sm group-hover:text-[#f76a0c] transition-colors">
+                  <span className="text-[#f76a0c] font-semibold text-sm group-hover:text-[#f76a0c] transition-colors">
                     Learn More →
                   </span>
                 </div>
@@ -318,7 +322,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               to="/service/commercial-pest-control"
-              className="inline-flex items-center gap-2 bg-[#112a44] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#568d22] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#112a44] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#f76a0c] transition-colors"
             >
               VIEW ALL SERVICES
             </Link>
@@ -335,32 +339,32 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">OUR LATEST ARTICLES</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">OUR LATEST ARTICLES</p>
             <h2 className="text-3xl font-bold text-[#112a44]">Pest Control Tips & Insights</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Link to="/mosquito-pest-control-season-in-oklahoma" className="bg-[#faf8ee] rounded-xl overflow-hidden group hover:shadow-lg transition-shadow">
               <div className="p-6">
-                <p className="text-[#568d22] text-xs uppercase font-semibold mb-2">May 8, 2026</p>
-                <h3 className="text-xl font-bold text-[#112a44] mb-3 group-hover:text-[#568d22] transition-colors">
+                <p className="text-[#f76a0c] text-xs uppercase font-semibold mb-2">May 8, 2026</p>
+                <h3 className="text-xl font-bold text-[#112a44] mb-3 group-hover:text-[#f76a0c] transition-colors">
                   Mosquito Season in Oklahoma
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Expert Tips to Protect Your Family | Pathfinder Pest Control Mosquitoes are more than a backyard annoyance they are a genuine health risk...
                 </p>
-                <span className="inline-block mt-4 text-[#568d22] font-semibold text-sm">Read More →</span>
+                <span className="inline-block mt-4 text-[#f76a0c] font-semibold text-sm">Read More →</span>
               </div>
             </Link>
             <Link to="/tulsas-mosquito-problem-just-met-its-match" className="bg-[#faf8ee] rounded-xl overflow-hidden group hover:shadow-lg transition-shadow">
               <div className="p-6">
-                <p className="text-[#568d22] text-xs uppercase font-semibold mb-2">May 8, 2026</p>
-                <h3 className="text-xl font-bold text-[#112a44] mb-3 group-hover:text-[#568d22] transition-colors">
+                <p className="text-[#f76a0c] text-xs uppercase font-semibold mb-2">May 8, 2026</p>
+                <h3 className="text-xl font-bold text-[#112a44] mb-3 group-hover:text-[#f76a0c] transition-colors">
                   Tulsa's Mosquito Problem Just Met Its Match!
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Pathfinder Pest Control Introduces Professional Mosquito Traps. If you live in the Tulsa area, you already know — mosquito season is no joke...
                 </p>
-                <span className="inline-block mt-4 text-[#568d22] font-semibold text-sm">Read More →</span>
+                <span className="inline-block mt-4 text-[#f76a0c] font-semibold text-sm">Read More →</span>
               </div>
             </Link>
           </div>

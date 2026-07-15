@@ -66,8 +66,8 @@ export default function ContactPage() {
               Pathfinder Pest Control provides online estimates and onsite services. You can schedule your service or call directly for pest control services in Tulsa, Oklahoma.
             </p>
             {submitted ? (
-              <div className="bg-[#568d22]/10 border border-[#568d22] rounded-xl p-8 text-center">
-                <div className="w-16 h-16 bg-[#568d22] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#f76a0c]/10 border border-[#f76a0c] rounded-xl p-8 text-center">
+                <div className="w-16 h-16 bg-[#f76a0c] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                       placeholder="Your name"
                     />
                   </div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                       placeholder="Your phone number"
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                     placeholder="Your email address"
                   />
                 </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   <select
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22]"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c]"
                   >
                     <option value="">Select a service</option>
                     <option>Bed Bug Removal</option>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#568d22] focus:ring-1 focus:ring-[#568d22] resize-none"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c] resize-none"
                     placeholder="Describe your pest problem..."
                   />
                 </div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-[#112a44] mb-6">Our Contact Information</h2>
             <div className="flex flex-col gap-6">
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-[#568d22] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#f76a0c] rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -176,21 +176,21 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-[#568d22] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#f76a0c] rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <h3 className="font-bold text-[#112a44] mb-1">Phone</h3>
-                  <a href="tel:9188566554" className="text-[#568d22] font-bold text-lg hover:text-[#112a44] transition-colors">
+                  <a href="tel:9188566554" className="text-[#f76a0c] font-bold text-lg hover:text-[#112a44] transition-colors">
                     +1 918-856-6554
                   </a>
                 </div>
               </div>
 
               <div className="flex gap-4 items-start">
-                <div className="w-12 h-12 bg-[#568d22] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#f76a0c] rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -208,19 +208,6 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Van image */}
-      <section className="bg-white">
-        <img
-          src="/images/path-finder-pest-control-van.jpg"
-          alt="Pathfinder Pest Control service van"
-          width={1200}
-          height={900}
-          className="w-full max-h-[420px] object-cover"
-          loading="lazy"
-          decoding="async"
-        />
       </section>
 
       <WhyUsSection />

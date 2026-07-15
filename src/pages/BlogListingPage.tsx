@@ -120,7 +120,7 @@ export default function BlogListingPage() {
               <p className="text-gray-500 mb-6">Try a different search term or category.</p>
               <button
                 onClick={() => { setSearch(''); setActiveCategory('All'); setPage(1) }}
-                className="text-[#568d22] font-semibold hover:underline"
+                className="text-[#f76a0c] font-semibold hover:underline"
               >
                 Clear filters
               </button>
@@ -139,11 +139,11 @@ export default function BlogListingPage() {
                       <span className="text-xs text-gray-400 bg-[#1e3a5c] px-2 py-0.5 rounded-full">{post.pestCategory}</span>
                     </div>
                     <div className="bg-white rounded-t-xl mx-3 px-5 pt-6 pb-6 relative z-20 shadow-md flex flex-col flex-grow">
-                      <h2 className="text-lg font-bold text-[#112a44] mb-3 group-hover:text-[#568d22] transition-colors leading-snug flex-grow">
+                      <h2 className="text-lg font-bold text-[#112a44] mb-3 group-hover:text-[#f76a0c] transition-colors leading-snug flex-grow">
                         {post.title}
                       </h2>
                       <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
-                      <span className="inline-flex items-center gap-1 text-[#568d22] font-semibold text-sm group-hover:text-[#f76a0c] transition-colors mt-auto">
+                      <span className="inline-flex items-center gap-1 text-[#f76a0c] font-semibold text-sm group-hover:text-[#f76a0c] transition-colors mt-auto">
                         Read More →
                       </span>
                     </div>

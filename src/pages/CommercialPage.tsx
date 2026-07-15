@@ -43,8 +43,10 @@ export default function CommercialPage() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-[#112a44] text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+      <section className="relative min-h-[560px] flex items-center overflow-hidden text-white">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/images/commercial.jpeg)' }} />
+        <div className="absolute inset-0 bg-[#112a44]/88" />
+        <div className="relative max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-14 items-center w-full">
           <div>
             <p className="text-[#fdd20a] uppercase text-sm font-semibold tracking-widest mb-3">BUSINESS PROTECTION</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
@@ -75,7 +77,7 @@ export default function CommercialPage() {
               'Discreet Service Vehicles',
             ].map(f => (
               <div key={f} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-3 border border-white/15">
-                <div className="w-5 h-5 bg-[#568d22] rounded flex items-center justify-center flex-shrink-0">
+                <div className="w-5 h-5 bg-[#f76a0c] rounded flex items-center justify-center flex-shrink-0">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -91,7 +93,7 @@ export default function CommercialPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">INDUSTRIES WE SERVE</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">INDUSTRIES WE SERVE</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-4">Pest Control for Every Type of Tulsa Business</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">We build customized pest management programs around the specific risks, regulations, and operational needs of your industry.</p>
           </div>
@@ -111,7 +113,7 @@ export default function CommercialPage() {
       <section className="py-20 bg-[#faf8ee]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">OUR COMMERCIAL SERVICES</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">OUR COMMERCIAL SERVICES</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44]">What's Included in Our Commercial Programs</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -134,7 +136,7 @@ export default function CommercialPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
           <div>
-            <p className="text-[#568d22] uppercase text-sm font-semibold tracking-widest mb-2">WHY PATHFINDER</p>
+            <p className="text-[#f76a0c] uppercase text-sm font-semibold tracking-widest mb-2">WHY PATHFINDER</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#112a44] mb-6">The Commercial Pest Control Standard Tulsa Businesses Expect</h2>
             <div className="flex flex-col gap-5">
               {[
@@ -144,7 +146,7 @@ export default function CommercialPage() {
                 { title: 'Responsive Communication', desc: 'You\'ll always be able to reach us. We respond quickly to service requests, pest emergencies, and questions between scheduled visits.' },
               ].map(r => (
                 <div key={r.title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#568d22] rounded flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-[#f76a0c] rounded flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -189,7 +191,7 @@ export default function CommercialPage() {
       <FAQSection faqs={faqs} title="Commercial Pest Control FAQ" />
 
       {/* Bottom CTA */}
-      <section className="bg-[#568d22] text-white py-16">
+      <section className="bg-[#f76a0c] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Keep Your Tulsa Business Pest-Free</h2>
           <p className="text-green-100 mb-8 text-lg">Service contracts available. After-hours scheduling. Detailed documentation for every visit.</p>
@@ -197,7 +199,7 @@ export default function CommercialPage() {
             <a href="tel:9188566554" className="inline-flex items-center justify-center bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-white transition-colors">
               +1 918-856-6554
             </a>
-            <Link to="/contact-us" className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#568d22] transition-colors">
+            <Link to="/contact-us" className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-[#f76a0c] transition-colors">
               Get a Business Quote
             </Link>
           </div>
