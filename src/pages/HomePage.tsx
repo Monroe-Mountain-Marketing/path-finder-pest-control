@@ -80,6 +80,7 @@ export default function HomePage() {
     phone: '',
     service: '',
     message: '',
+    smsConsent: false,
   })
   const [quickSubmitted, setQuickSubmitted] = useState(false)
   const [quickSubmitting, setQuickSubmitting] = useState(false)
@@ -100,6 +101,7 @@ export default function HomePage() {
         phone: '',
         service: '',
         message: '',
+        smsConsent: false,
       })
     } catch (error) {
       setQuickSubmitError(error instanceof Error ? error.message : 'Unable to submit your request right now.')
@@ -220,6 +222,19 @@ export default function HomePage() {
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c] resize-none"
                     placeholder="Message (optional)"
                   />
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      id="quickSmsConsent"
+                      required
+                      checked={quickFormData.smsConsent}
+                      onChange={(e) => setQuickFormData({ ...quickFormData, smsConsent: e.target.checked })}
+                      className="mt-0.5 w-4 h-4 accent-[#f76a0c] flex-shrink-0 cursor-pointer"
+                    />
+                    <label htmlFor="quickSmsConsent" className="text-xs text-gray-500 leading-relaxed cursor-pointer">
+                      I agree to receive SMS and email communications from Pathfinder Pest Control. Message and data rates may apply. Reply STOP to opt out.
+                    </label>
+                  </div>
                   {quickSubmitError ? (
                     <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2">
                       {quickSubmitError}

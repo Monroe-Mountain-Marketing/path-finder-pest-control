@@ -10,6 +10,7 @@ export default function ContactPage() {
     phone: '',
     service: '',
     message: '',
+    smsConsent: false,
   })
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -30,6 +31,7 @@ export default function ContactPage() {
         phone: '',
         service: '',
         message: '',
+        smsConsent: false,
       })
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : 'Unable to submit your request right now.')
@@ -141,6 +143,19 @@ export default function ContactPage() {
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#f76a0c] focus:ring-1 focus:ring-[#f76a0c] resize-none"
                     placeholder="Describe your pest problem..."
                   />
+                </div>
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="smsConsent"
+                    required
+                    checked={formData.smsConsent}
+                    onChange={(e) => setFormData({ ...formData, smsConsent: e.target.checked })}
+                    className="mt-1 w-4 h-4 accent-[#f76a0c] flex-shrink-0 cursor-pointer"
+                  />
+                  <label htmlFor="smsConsent" className="text-xs text-gray-500 leading-relaxed cursor-pointer">
+                    I agree to receive SMS and email communications from Pathfinder Pest Control regarding my inquiry and future service updates. Message and data rates may apply. Reply STOP to opt out at any time.
+                  </label>
                 </div>
                 {submitError ? (
                   <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2">

@@ -4,6 +4,7 @@ type LeadFormData = {
   phone: string
   service?: string
   message?: string
+  smsConsent?: boolean
 }
 
 const HIGHLEVEL_BASE_URL = 'https://services.leadconnectorhq.com'
