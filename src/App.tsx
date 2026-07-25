@@ -62,8 +62,24 @@ export default function App() {
             <Route path="/services/bed-bug-exterminator" element={<DirectServicePage slug="bed-bug-removal" />} />
             <Route path="/rodent-control-tulsa" element={<DirectServicePage slug="rodent-control" />} />
 
-            {/* SAP (Service Area Pages) */}
+            {/* SAP (Service Area Pages) — legacy /sap/:city kept for cities without new canonical URL */}
             <Route path="/sap/:city" element={<SAPPage />} />
+
+            {/* Canonical city pages (migration from /sap/:city) */}
+            <Route path="/jenks-pest-control" element={<SAPPage slug="jenks" />} />
+            <Route path="/broken-arrow-pest-control" element={<SAPPage slug="broken-arrow" />} />
+            <Route path="/glenpool-pest-control" element={<SAPPage slug="glenpool" />} />
+            <Route path="/catoosa-pest-control" element={<SAPPage slug="catoosa" />} />
+            <Route path="/coweta-pest-control" element={<SAPPage slug="coweta" />} />
+            <Route path="/bixby-pest-control" element={<SAPPage slug="bixby" />} />
+
+            {/* Redirects: /sap/:city → canonical city pages */}
+            <Route path="/sap/jenks" element={<Navigate to="/jenks-pest-control" replace />} />
+            <Route path="/sap/broken-arrow" element={<Navigate to="/broken-arrow-pest-control" replace />} />
+            <Route path="/sap/glenpool" element={<Navigate to="/glenpool-pest-control" replace />} />
+            <Route path="/sap/catoosa" element={<Navigate to="/catoosa-pest-control" replace />} />
+            <Route path="/sap/coweta" element={<Navigate to="/coweta-pest-control" replace />} />
+            <Route path="/sap/bixby" element={<Navigate to="/bixby-pest-control" replace />} />
 
             {/* Standalone service pages */}
             <Route path="/gopher-removal" element={<GopherRemovalPage />} />
@@ -91,6 +107,13 @@ export default function App() {
             {/* WordPress template pages — redirect to home */}
             <Route path="/template/*" element={<Navigate to="/" replace />} />
             <Route path="/template_tag/*" element={<Navigate to="/" replace />} />
+
+            {/* WordPress legacy redirects — blog post canonicalization */}
+            <Route path="/bed-bug-inspection" element={<Navigate to="/bed-bug-inspection-2" replace />} />
+            <Route path="/what-is-ipm-integrated-pest-management-explained" element={<Navigate to="/integrated-pest-management-benefits" replace />} />
+            <Route path="/eco-friendly-pest-control-solutions" element={<Navigate to="/integrated-pest-management-benefits" replace />} />
+            <Route path="/mole-removal-mole-control-in-tulsa-broken-arrow-ok" element={<Navigate to="/moles-voles-removal" replace />} />
+            <Route path="/pathfinder-pest-control-now-offers-gopher-removal-as-a-stand-alone-or-yard-pest-control-service-in-oklahoma" element={<Navigate to="/gopher-removal" replace />} />
 
             {/* Dynamic catch-all for all blog post slugs — must be last before * */}
             <Route path="/:slug" element={<BlogPostPage />} />

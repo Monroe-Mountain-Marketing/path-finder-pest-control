@@ -78,7 +78,7 @@ export default function BlogPostPage() {
                 href="tel:9188566554"
                 className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-6 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
               >
-                Call +1 918-856-6554
+                Call +1 918-504-5245
               </a>
             </div>
           </article>
@@ -97,7 +97,7 @@ export default function BlogPostPage() {
                 href="tel:9188566554"
                 className="block text-center bg-[#fdd20a] text-[#112a44] font-bold px-4 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors mb-3"
               >
-                +1 918-856-6554
+                +1 918-504-5245
               </a>
               <Link
                 to="/contact-us"

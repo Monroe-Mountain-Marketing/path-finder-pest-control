@@ -97,7 +97,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3 text-sm text-gray-600">
             <p>3240 S 82nd E Ave Suite A,<br />Tulsa, OK 74145</p>
             <a href="tel:9188566554" className="hover:text-[#f76a0c] transition-colors font-semibold text-[#112a44]">
-              +1 918-856-6554
+              +1 918-504-5245
             </a>
             <div>
               <p className="font-semibold text-[#112a44] mb-1">Working Hours</p>

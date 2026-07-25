@@ -5,9 +5,13 @@ import ProcessSection from '../components/ProcessSection'
 import FAQSection from '../components/FAQSection'
 import { Link } from 'react-router-dom'
 
-export default function SAPPage() {
+interface SAPPageProps {
+  slug?: string
+}
+
+export default function SAPPage({ slug: slugProp }: SAPPageProps = {}) {
   const { city } = useParams<{ city: string }>()
-  const sap = getSAPBySlug(city || '')
+  const sap = getSAPBySlug(slugProp || city || '')
 
   if (!sap) return <Navigate to="/" replace />
 
@@ -34,7 +38,7 @@ export default function SAPPage() {
             href="tel:9188566554"
             className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors mt-4"
           >
-            Call +1 918-856-6554
+            Call +1 918-504-5245
           </a>
         </div>
       </section>
@@ -76,7 +80,7 @@ export default function SAPPage() {
               href="tel:9188566554"
               className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-white transition-colors"
             >
-              +1 918-856-6554
+              +1 918-504-5245
             </a>
             <Link
               to="/contact-us"

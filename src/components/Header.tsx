@@ -92,7 +92,7 @@ export default function Header() {
                     href="tel:9188566554"
                     className="text-xs font-bold text-[#f76a0c] hover:text-[#112a44] transition-colors"
                   >
-                    +1 918-856-6554
+                    +1 918-504-5245
                   </a>
                 </div>
 
@@ -196,7 +196,7 @@ export default function Header() {
           <Link to="/new-articles" className="text-[#112a44] py-2 hover:text-[#f76a0c]" onClick={() => setMobileOpen(false)}>Blog</Link>
           <Link to="/contact-us" className="text-[#112a44] py-2 hover:text-[#f76a0c]" onClick={() => setMobileOpen(false)}>Contact</Link>
           <a href="tel:9188566554" className="mt-2 bg-[#fdd20a] text-[#112a44] font-bold px-4 py-2 rounded-lg text-center hover:bg-[#f76a0c] hover:text-white transition-colors">
-            +1 918-856-6554
+            +1 918-504-5245
           </a>
         </div>
       )}

@@ -148,7 +148,7 @@ export default function HomePage() {
                 href="tel:9188566554"
                 className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
               >
-                Call Now +1 918-856-6554
+                Call Now +1 918-504-5245
               </a>
               <Link
                 to="/contact-us"

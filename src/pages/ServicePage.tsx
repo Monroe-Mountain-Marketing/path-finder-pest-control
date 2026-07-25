@@ -72,7 +72,7 @@ export default function ServicePage() {
               href="tel:9188566554"
               className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-white transition-colors"
             >
-              +1 918-856-6554
+              +1 918-504-5245
             </a>
             <a
               href="/contact-us"
