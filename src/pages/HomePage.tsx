@@ -12,19 +12,19 @@ const services = [
   {
     title: 'Bed Bug Control',
     desc: 'We use heat treatments and targeted chemical applications to eliminate bed bugs from every life stage, providing lasting relief.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+    img: '/images/2025-10-inspection-for-bed-bugs.jpg',
     path: '/service/bed-bug-removal',
   },
   {
     title: 'Flea Control',
     desc: 'Pathfinder Pest Control removes fleas from homes and yards with effective treatments that protect pets and families from recurring infestations.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/flea.jpg',
+    img: '/images/2025-10-flea.jpg',
     path: '/service/flea-control',
   },
   {
     title: 'Commercial Pest Control',
     desc: 'We deliver reliable commercial pest control services that help Tulsa businesses maintain clean, compliant, and pest-free environments.',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/commercial-pest-control.jpg',
+    img: '/images/2025-10-commercial-pest-control.jpg',
     path: '/service/commercial-pest-control',
   },
   {
