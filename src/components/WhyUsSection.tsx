@@ -57,7 +57,7 @@ export default function WhyUsSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:9188566554"
+              href="tel:9189259658"
               className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
             >
               CALL NOW

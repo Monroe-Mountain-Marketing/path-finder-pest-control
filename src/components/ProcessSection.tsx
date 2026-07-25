@@ -29,8 +29,8 @@ export default function ProcessSection() {
         </div>
         <div className="text-center mt-10">
           <p className="text-gray-300 mb-3">Need More Help?</p>
-          <a href="tel:9188566554" className="text-2xl font-bold text-[#fdd20a] hover:text-white transition-colors">
-            +1 918-504-5245
+          <a href="tel:9189259658" className="text-2xl font-bold text-[#fdd20a] hover:text-white transition-colors">
+            +1 918-925-9658
           </a>
         </div>
       </div>

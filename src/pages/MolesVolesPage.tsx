@@ -28,7 +28,7 @@ export default function MolesVolesPage() {
               Professional moles and voles removal available now in Tulsa and surrounding areas. Protect your lawn from tunneling damage with expert removal from Pathfinder Pest Control.
             </p>
             <a
-              href="tel:9188566554"
+              href="tel:9189259658"
               className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
             >
               Schedule Removal Today

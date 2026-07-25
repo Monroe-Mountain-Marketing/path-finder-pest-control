@@ -35,10 +35,10 @@ export default function SAPPage({ slug: slugProp }: SAPPageProps = {}) {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{sap.city}, Oklahoma</h1>
           <p className="text-gray-200 text-lg mb-2">Zip Code: {sap.zip}</p>
           <a
-            href="tel:9188566554"
+            href="tel:9189259658"
             className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors mt-4"
           >
-            Call +1 918-504-5245
+            Call +1 918-925-9658
           </a>
         </div>
       </section>
@@ -77,10 +77,10 @@ export default function SAPPage({ slug: slugProp }: SAPPageProps = {}) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:9188566554"
+              href="tel:9189259658"
               className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-white transition-colors"
             >
-              +1 918-504-5245
+              +1 918-925-9658
             </a>
             <Link
               to="/contact-us"

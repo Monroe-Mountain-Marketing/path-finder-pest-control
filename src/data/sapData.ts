@@ -23,7 +23,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Do you provide pest control across all of Tulsa?', answer: 'Yes. We serve neighborhoods throughout Tulsa and nearby communities with residential and commercial pest control programs.' },
       { question: 'What pests are most common in Tulsa?', answer: 'Tulsa properties commonly see termites, ants, spiders, cockroaches, mosquitoes, and rodents throughout the year.' },
-      { question: 'How quickly can I schedule service in Tulsa?', answer: 'In many cases, we can provide same-day or next-day appointments in Tulsa. Call +1 918-504-5245 to check availability.' },
+      { question: 'How quickly can I schedule service in Tulsa?', answer: 'In many cases, we can provide same-day or next-day appointments in Tulsa. Call +1 918-925-9658 to check availability.' },
     ],
   },
   {
@@ -38,7 +38,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Do you provide pest control in all of Broken Arrow?', answer: 'Yes, we serve all neighborhoods and zip codes in Broken Arrow including 74011, 74012, and 74014.' },
       { question: 'What pests are most common in Broken Arrow?', answer: 'Common pests in Broken Arrow include subterranean termites, various ant species, mosquitoes, rodents, cockroaches, and spiders. Termites are particularly problematic due to Oklahoma\'s soil conditions.' },
-      { question: 'How quickly can you respond to a pest emergency in Broken Arrow?', answer: 'We typically offer same-day or next-day service for pest emergencies in Broken Arrow. Call us at +1 918-504-5245 for immediate assistance.' },
+      { question: 'How quickly can you respond to a pest emergency in Broken Arrow?', answer: 'We typically offer same-day or next-day service for pest emergencies in Broken Arrow. Call us at +1 918-925-9658 for immediate assistance.' },
     ],
   },
   {
@@ -53,7 +53,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Do you service Bixby homes for termites?', answer: 'Yes, we provide comprehensive termite inspection and treatment services throughout Bixby. Oklahoma is a high-risk state for subterranean termites, and we recommend annual inspections for all Bixby homeowners.' },
       { question: 'Is mosquito control effective in Bixby?', answer: 'Yes, our mosquito control treatments are very effective in Bixby. The Arkansas River and surrounding wetlands create ideal mosquito breeding conditions. Our recurring treatment program significantly reduces mosquito populations on your property.' },
-      { question: 'How can I schedule pest control in Bixby?', answer: 'Call us at +1 918-504-5245 or use our online contact form to schedule service in Bixby. We offer flexible scheduling to accommodate your needs.' },
+      { question: 'How can I schedule pest control in Bixby?', answer: 'Call us at +1 918-925-9658 or use our online contact form to schedule service in Bixby. We offer flexible scheduling to accommodate your needs.' },
     ],
   },
   {
@@ -83,7 +83,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Do you provide commercial pest control in Catoosa?', answer: 'Yes, we serve commercial businesses throughout Catoosa including restaurants, warehouses, retail establishments, and more.' },
       { question: 'What are the most common pest problems in Catoosa?', answer: 'Catoosa businesses and homes commonly deal with termites, ants, cockroaches, rodents, and mosquitoes. The proximity to the Verdigris River contributes to mosquito pressure in the area.' },
-      { question: 'How far in advance should I schedule pest control service?', answer: 'For routine service, we recommend scheduling 1–2 days in advance. For urgent situations, we often can provide same-day service. Call us at +1 918-504-5245.' },
+      { question: 'How far in advance should I schedule pest control service?', answer: 'For routine service, we recommend scheduling 1–2 days in advance. For urgent situations, we often can provide same-day service. Call us at +1 918-925-9658.' },
     ],
   },
   {
@@ -112,7 +112,7 @@ export const sapData: SAPData[] = [
     services: ['Termite Treatment', 'Ant Control', 'Rodent Control', 'Mosquito Control', 'Flea Control', 'Cockroach Extermination', 'Spider Control', 'Bed Bug Removal'],
     faqs: [
       { question: 'Is Glenpool in your service area?', answer: 'Yes, Glenpool is within our primary service area. We serve all of Glenpool including zip code 74033.' },
-      { question: 'Do you offer same-day pest control service in Glenpool?', answer: 'We strive to offer same-day or next-day service when possible. For urgent situations, call us directly at +1 918-504-5245.' },
+      { question: 'Do you offer same-day pest control service in Glenpool?', answer: 'We strive to offer same-day or next-day service when possible. For urgent situations, call us directly at +1 918-925-9658.' },
       { question: 'What types of ants are common in Glenpool?', answer: 'Common ant species in Glenpool include odorous house ants, fire ants, pavement ants, and carpenter ants. We identify the species and use targeted treatments for effective control.' },
     ],
   },
@@ -128,7 +128,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Is mosquito control especially important in Jenks?', answer: 'Yes. Jenks\'s proximity to the Arkansas River creates ideal mosquito breeding habitat. Our mosquito control programs are particularly effective in reducing mosquito pressure in Jenks yards and outdoor spaces.' },
       { question: 'Do you serve the Jenks Riverwalk area businesses?', answer: 'Yes, we provide commercial pest control services to businesses throughout the Jenks area including near the Riverwalk.' },
-      { question: 'How do I get a free pest control quote in Jenks?', answer: 'Call us at +1 918-504-5245 or submit a request through our contact page. We offer free inspections and estimates for Jenks properties.' },
+      { question: 'How do I get a free pest control quote in Jenks?', answer: 'Call us at +1 918-925-9658 or submit a request through our contact page. We offer free inspections and estimates for Jenks properties.' },
     ],
   },
   {
@@ -143,7 +143,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Do you serve all neighborhoods in Owasso?', answer: 'Yes. We provide pest control services throughout Owasso and nearby areas.' },
       { question: 'What is a common pest issue in Owasso?', answer: 'Termites, ants, and rodents are common concerns in Owasso, especially during seasonal transitions.' },
-      { question: 'How do I book service in Owasso?', answer: 'Call +1 918-504-5245 or submit a request through our contact page for scheduling.' },
+      { question: 'How do I book service in Owasso?', answer: 'Call +1 918-925-9658 or submit a request through our contact page for scheduling.' },
     ],
   },
   {
@@ -173,7 +173,7 @@ export const sapData: SAPData[] = [
     faqs: [
       { question: 'Is Berryhill inside your Tulsa-area service region?', answer: 'Yes. Berryhill is part of the Tulsa-area communities we regularly service.' },
       { question: 'Do you offer one-time and recurring treatments in Berryhill?', answer: 'Yes, we offer both one-time service and recurring pest protection plans.' },
-      { question: 'How can I get a quote for Berryhill pest control?', answer: 'Call +1 918-504-5245 or use our contact page to request a free quote.' },
+      { question: 'How can I get a quote for Berryhill pest control?', answer: 'Call +1 918-925-9658 or use our contact page to request a free quote.' },
     ],
   },
 ]

@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
             If you have questions about this privacy policy, please contact us at:<br />
             Pathfinder Pest Control<br />
             3240 S 82nd E Ave Suite A, Tulsa, OK 74145<br />
-            Phone: +1 918-504-5245
+            Phone: +1 918-925-9658
           </p>
         </div>
       </section>

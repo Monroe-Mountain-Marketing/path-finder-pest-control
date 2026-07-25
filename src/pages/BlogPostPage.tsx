@@ -75,10 +75,10 @@ export default function BlogPostPage() {
                 Contact Pathfinder Pest Control for expert pest management services in Tulsa and surrounding areas.
               </p>
               <a
-                href="tel:9188566554"
+                href="tel:9189259658"
                 className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-6 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
               >
-                Call +1 918-504-5245
+                Call +1 918-925-9658
               </a>
             </div>
           </article>
@@ -94,10 +94,10 @@ export default function BlogPostPage() {
                 <p>Fri: 8AM–5PM | Sat: 9AM–12PM</p>
               </div>
               <a
-                href="tel:9188566554"
+                href="tel:9189259658"
                 className="block text-center bg-[#fdd20a] text-[#112a44] font-bold px-4 py-3 rounded-lg hover:bg-[#f76a0c] hover:text-white transition-colors mb-3"
               >
-                +1 918-504-5245
+                +1 918-925-9658
               </a>
               <Link
                 to="/contact-us"

@@ -89,10 +89,10 @@ export default function Header() {
                     <p className="text-xs text-gray-500">Licensed technicians · Same-day service available</p>
                   </div>
                   <a
-                    href="tel:9188566554"
+                    href="tel:9189259658"
                     className="text-xs font-bold text-[#f76a0c] hover:text-[#112a44] transition-colors"
                   >
-                    +1 918-504-5245
+                    +1 918-925-9658
                   </a>
                 </div>
 
@@ -145,7 +145,7 @@ export default function Header() {
         {/* CTA + Mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:9188566554"
+            href="tel:9189259658"
             className="hidden md:inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-4 py-2 rounded-lg text-sm hover:bg-[#f76a0c] hover:text-white transition-colors"
           >
             Call Now
@@ -195,8 +195,8 @@ export default function Header() {
           <Link to="/commercial-pest-control" className="text-[#112a44] py-2 hover:text-[#f76a0c]" onClick={() => setMobileOpen(false)}>Commercial</Link>
           <Link to="/new-articles" className="text-[#112a44] py-2 hover:text-[#f76a0c]" onClick={() => setMobileOpen(false)}>Blog</Link>
           <Link to="/contact-us" className="text-[#112a44] py-2 hover:text-[#f76a0c]" onClick={() => setMobileOpen(false)}>Contact</Link>
-          <a href="tel:9188566554" className="mt-2 bg-[#fdd20a] text-[#112a44] font-bold px-4 py-2 rounded-lg text-center hover:bg-[#f76a0c] hover:text-white transition-colors">
-            +1 918-504-5245
+          <a href="tel:9189259658" className="mt-2 bg-[#fdd20a] text-[#112a44] font-bold px-4 py-2 rounded-lg text-center hover:bg-[#f76a0c] hover:text-white transition-colors">
+            +1 918-925-9658
           </a>
         </div>
       )}

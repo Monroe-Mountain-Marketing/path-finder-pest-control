@@ -44,7 +44,7 @@ export default function ContactPage() {
     <>
       <Helmet>
         <title>Contact Us | Pathfinder Pest Control Tulsa OK</title>
-        <meta name="description" content="Contact Pathfinder Pest Control for pest control services in Tulsa, OK. Call +1 918-504-5245 or request a quote online." />
+        <meta name="description" content="Contact Pathfinder Pest Control for pest control services in Tulsa, OK. Call +1 918-925-9658 or request a quote online." />
       </Helmet>
 
       {/* Hero */}
@@ -198,8 +198,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-[#112a44] mb-1">Phone</h3>
-                  <a href="tel:9188566554" className="text-[#f76a0c] font-bold text-lg hover:text-[#112a44] transition-colors">
-                    +1 918-504-5245
+                  <a href="tel:9189259658" className="text-[#f76a0c] font-bold text-lg hover:text-[#112a44] transition-colors">
+                    +1 918-925-9658
                   </a>
                 </div>
               </div>

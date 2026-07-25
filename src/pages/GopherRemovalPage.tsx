@@ -33,7 +33,7 @@ export default function GopherRemovalPage() {
               Pathfinder Pest Control offers reliable gopher removal services in Tulsa, OK. We identify active burrows, remove gophers, and help protect your property from future infestations with effective pest control solutions designed for Tulsa homes and landscapes.
             </p>
             <a
-              href="tel:9188566554"
+              href="tel:9189259658"
               className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
             >
               Schedule Gopher Removal Today

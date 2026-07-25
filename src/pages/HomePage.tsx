@@ -147,10 +147,10 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:9188566554"
+                href="tel:9189259658"
                 className="inline-flex items-center justify-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
               >
-                Call Now +1 918-504-5245
+                Call Now +1 918-925-9658
               </a>
               <Link
                 to="/contact-us"

@@ -192,10 +192,10 @@ export default function ServiceWizard() {
                     Get a Free Quote
                   </Link>
                   <a
-                    href="tel:9188566554"
+                    href="tel:9189259658"
                     className="block text-center border-2 border-[#112a44] text-[#112a44] font-bold px-6 py-3 rounded-xl hover:bg-[#112a44] hover:text-white transition-colors"
                   >
-                    Call +1 918-504-5245
+                    Call +1 918-925-9658
                   </a>
                 </div>
                 <button onClick={back} className="mt-4 text-sm text-gray-400 hover:text-gray-600 w-full text-center">

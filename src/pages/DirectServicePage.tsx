@@ -32,7 +32,7 @@ export default function DirectServicePage({ slug }: DirectServicePageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{service.heroTitle}</h1>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">{service.heroSubtitle}</p>
             <a
-              href="tel:9188566554"
+              href="tel:9189259658"
               className="inline-flex items-center gap-2 bg-[#fdd20a] text-[#112a44] font-bold px-8 py-4 rounded-lg text-lg hover:bg-[#f76a0c] hover:text-white transition-colors"
             >
               Schedule Service Today
