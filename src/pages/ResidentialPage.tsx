@@ -10,7 +10,7 @@ const services = [
     title: 'Bed Bug Removal',
     desc: 'Complete elimination using heat treatment or targeted chemical applications that reach every life stage.',
     path: '/service/bed-bug-removal',
-    img: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+    img: '/images/2025-10-inspection-for-bed-bugs.jpg',
   },
   {
     title: 'Rodent Control',

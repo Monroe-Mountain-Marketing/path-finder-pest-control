@@ -20,7 +20,7 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Professional bed bug removal in Tulsa, OK. Pathfinder Pest Control eliminates bed bugs with heat treatment and targeted applications.',
     heroTitle: 'Professional Bed Bug Removal in Tulsa OK',
     heroSubtitle: 'Pathfinder Pest Control provides comprehensive bed bug inspection and extermination services in Tulsa, eliminating infestations at every life stage with proven treatment methods.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+    heroImage: '/images/2025-10-inspection-for-bed-bugs.jpg',
     sections: [
       {
         heading: 'Signs You Have a Bed Bug Infestation',
@@ -29,7 +29,7 @@ export const servicesData: ServiceData[] = [
       {
         heading: 'Our Bed Bug Treatment Process',
         content: 'Our licensed technicians use a multi-step approach to eliminate bed bugs completely. We begin with a thorough inspection of all sleeping areas, furniture, baseboards, and electrical outlets. We then apply targeted chemical treatments or heat treatment to penetrate all hiding spots. Follow-up treatments ensure complete elimination. We also provide preparation instructions to maximize treatment effectiveness.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/inspection-for-bed-bugs.jpg',
+        image: '/images/2025-10-inspection-for-bed-bugs.jpg',
       },
       {
         heading: 'Why Choose Professional Bed Bug Treatment',
@@ -78,12 +78,12 @@ export const servicesData: ServiceData[] = [
     metaDesc: 'Reliable commercial pest control services in Tulsa, OK. Keep your business pest-free with Pathfinder Pest Control.',
     heroTitle: 'Commercial Pest Control Services in Tulsa OK',
     heroSubtitle: 'We deliver reliable commercial pest control services that help Tulsa businesses maintain clean, compliant, and pest-free environments year-round.',
-    heroImage: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/commercial-pest-control.jpg',
+    heroImage: '/images/2025-10-commercial-pest-control.jpg',
     sections: [
       {
         heading: 'Protecting Your Tulsa Business from Pests',
         content: 'Pests in a commercial setting can damage your reputation, endanger health, and violate health codes. Pathfinder Pest Control provides customized commercial pest control programs for restaurants, offices, retail stores, warehouses, healthcare facilities, and more. We work with your schedule to minimize disruption to your operations.',
-        image: 'https://pathfinderpestcontrol.com/wp-content/uploads/2025/10/commercial-pest-control.jpg',
+        image: '/images/2025-10-commercial-pest-control.jpg',
       },
       {
         heading: 'Industries We Serve',
